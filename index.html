@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Western Maine 2026 Fall Sports Dashboard</title>
+<meta name="description" content="Western Maine 2026 fall sports dashboard: football, soccer, field hockey, cross country, volleyball schedules, standout athletes, class realignments, and weekly standings updates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f5d3a'/%3E%3Cpath d='M16 6l8 4v6c0 5-4 8-8 10-4-2-8-5-8-10v-6l8-4z' fill='none' stroke='%23e0923f' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="app">
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="currentColor"/>
+        <path d="M16 6l8 4v6c0 5-4 8-8 10-4-2-8-5-8-10v-6l8-4z" fill="none" stroke="#e0923f" stroke-width="2"/>
+        <path d="M16 10v8M12 12l4 2 4-2" stroke="#e0923f" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <div class="brand-txt">
+        <b>Western Maine Sports</b>
+        <span>Fall 2026 Season Dashboard</span>
+      </div>
+    </div>
+    <div class="topbar-spacer"></div>
+    <div class="updated-chip"><span class="dot"></span><span id="updatedLabel">Updated —</span></div>
+    <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" title="Toggle theme">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </header>
+
+  <div class="sidebar-wrap">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="nav-label">Sections</div>
+      <nav class="nav" id="nav">
+        <a href="#overview" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>Overview</a>
+        <a href="#schedule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Schedule</a>
+        <a href="#matchups"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6-6 6 6M6 15l6 6 6-6"/></svg>Key Matchups</a>
+        <a href="#athletes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>Athletes</a>
+        <a href="#realignments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18M9 3v6M15 9v6"/></svg>Realignments</a>
+        <a href="#standings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg>Standings</a>
+        <a href="#update"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-9-9M21 3v6h-6"/></svg>Update Center</a>
+        <a href="#sources"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Sources</a>
+      </nav>
+      <div class="focus-card">
+        <b>Focus teams</b>
+        Oxford Hills (Class A N) · Fryeburg Academy (Class B N) · Winthrop (Class D S)
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HERO / OVERVIEW -->
+      <section class="section" id="overview">
+        <div class="hero">
+          <h1>Western Maine 2026 Fall Sports</h1>
+          <p id="heroSub">Football, boys &amp; girls soccer, field hockey, cross country, and volleyball across the MPA Western Maine region — sortable schedules, standout-athlete leaderboards, class realignments, and a weekly standings tracker through November.</p>
+          <div class="pill-row">
+            <span class="pill">First countable game: Sep 3, 2026</span>
+            <span class="pill">State championships: late Oct – Nov 8</span>
+            <span class="pill">MPA classifications</span>
+          </div>
+        </div>
+
+        <div class="kpi-grid" id="kpiGrid"></div>
+      </section>
+
+      <!-- KEY MATCHUPS -->
+      <section class="section" id="matchups">
+        <div class="section-head">
+          <h2>Key Matchups</h2>
+          <span class="hint">Oxford Hills &amp; Fryeburg Academy pinned</span>
+        </div>
+        <div class="matchup-grid" id="matchupGrid"></div>
+      </section>
+
+      <!-- SCHEDULE -->
+      <section class="section" id="schedule">
+        <div class="section-head">
+          <h2>Regular Season Schedule</h2>
+          <span class="hint">Sortable · click column headers</span>
+        </div>
+        <p class="section-intro">Upcoming regular-season games beginning September 3, 2026. Filter by sport, search by team, and sort by date or matchup. Schedule rows now cover <b>football, boys &amp; girls soccer, field hockey, and cross country meets</b> — XC meet rows show the host school, participating teams, start time, and a source link. Volleyball matches are added as verified schedules publish (MaxPreps / school pages). Every XC row is verified from the official MPA SportPageSchedule (date, time, location, team rosters). Times shown where published; some are listed TBA by the source.</p>
+
+        <div class="toolbar" id="schedToolbar">
+          <div class="chip-group" id="sportChips"></div>
+          <div class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+            <input type="search" id="teamSearch" placeholder="Search team or town…" aria-label="Search teams">
+          </div>
+          <select class="select" id="sortSelect" aria-label="Sort by">
+            <option value="date">Sort: Date</option>
+            <option value="sport">Sort: Sport</option>
+            <option value="home">Sort: Home team</option>
+            <option value="away">Sort: Away team</option>
+          </select>
+          <label class="select" style="display:flex;align-items:center;gap:6px;cursor:pointer">
+            <input type="checkbox" id="westOnly" style="width:auto"> Western ME only
+          </label>
+          <span class="count" id="schedCount"></span>
+        </div>
+
+        <div class="table-wrap">
+          <div class="scroll-x">
+            <table class="sched" id="schedTable">
+              <thead>
+                <tr>
+                  <th data-sort="date" class="sorted">Date <span class="arrow">▾</span></th>
+                  <th data-sort="sport">Sport <span class="arrow"></span></th>
+                  <th data-sort="away">Away <span class="arrow"></span></th>
+                  <th>vs</th>
+                  <th data-sort="home">Home <span class="arrow"></span></th>
+                  <th data-sort="time">Time <span class="arrow"></span></th>
+                  <th>Region</th>
+                </tr>
+              </thead>
+              <tbody id="schedBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ATHLETES -->
+      <section class="section" id="athletes">
+        <div class="section-head">
+          <h2>Standout Athletes</h2>
+          <span class="hint">Source-verified · 2026 watch list</span>
+        </div>
+        <p class="section-intro">A watch-list of Western Maine fall athletes to follow, including golf — Winthrop's <b>Drew Mertzel</b> (defending Class C state champion) and <b>Kay Allaire</b> (Class C girls runner-up) — plus football, soccer, and field hockey standouts. Every entry links to its original source.</p>
+        <div class="ath-grid" id="athGrid"></div>
+      </section>
+
+      <!-- REALIGNMENTS -->
+      <section class="section" id="realignments">
+        <div class="section-head">
+          <h2>Team Class Realignments</h2>
+          <span class="hint">MPA 2025–2026 cycle</span>
+        </div>
+        <p class="section-intro">Maine Principals' Association classifications and realignment changes. Football alignments are verified for the 2025 &amp; 2026 cycle; other sports reflect the current MPA bulletins (2025-26) — re-verify when the MPA posts 2026-27 sport bulletins.</p>
+        <div class="realign-tabs" id="realignTabs"></div>
+        <div id="realignContent"></div>
+      </section>
+
+      <!-- STANDINGS -->
+      <section class="section" id="standings">
+        <div class="section-head">
+          <h2>Standings &amp; Playoff Tracker</h2>
+          <span class="hint" id="standUpdated">—</span>
+        </div>
+        <p class="section-intro">Regional standings and playoff eligibility tracked weekly. The table below is a football preseason baseline; soccer, field hockey, cross country, and volleyball standings are added weekly as MPA Heal Point reports publish. Labels reflect preseason outlook only until computed standings are available.</p>
+        <div class="table-wrap" style="overflow-x:auto">
+          <table class="stand-table" id="standTable">
+            <thead>
+              <tr>
+                <th>Team</th><th>Class</th><th>Record</th><th>Heal Pts</th><th>Playoff Status</th><th>Key Upcoming</th>
+              </tr>
+            </thead>
+            <tbody id="standBody"></tbody>
+          </table>
+        </div>
+        <div class="warn-note" id="standNote"></div>
+      </section>
+
+      <!-- UPDATE CENTER -->
+      <section class="section" id="update">
+        <div class="section-head">
+          <h2>Weekly Update Center</h2>
+          <span class="hint">Manual · source-verified workflow</span>
+        </div>
+        <p class="section-intro">A repeatable weekly workflow to keep standings, schedules, and playoff status current through November. The log here is an in-session scratchpad (clears on reload) — for a durable record, edit <code>js/data.js</code> and redeploy, or export the log as JSON below.</p>
+        <div class="update-grid">
+          <div class="update-card">
+            <h3>Weekly Workflow</h3>
+            <ol class="steps">
+              <li><b>Check MPA standings.</b> Open the MPA sport pages (football Heal Points, soccer, field hockey, volleyball, XC) and copy the latest standings.</li>
+              <li><b>Update results.</b> Fill in wins/losses from the past week's games using downtownme.com, MaxPreps, and school athletics pages.</li>
+              <li><b>Re-tag playoff status.</b> Set each team to <i>In</i>, <i>Bubble</i>, or <i>Out</i> based on Heal Point position and tournament cut lines.</li>
+              <li><b>Note key matchups.</b> Add the next week's biggest games for Oxford Hills, Fryeburg Academy, and Winthrop.</li>
+              <li><b>Log the update.</b> Add a dated entry to the update log below, then redeploy.</li>
+            </ol>
+            <div class="update-note">Sources to check each week: <a href="https://www.mpa.cc" target="_blank" rel="noopener">mpa.cc</a> · <a href="https://www.downtownme.com/sports/sports.asp" target="_blank" rel="noopener">downtownme.com</a> · <a href="https://www.maxpreps.com/me/football/" target="_blank" rel="noopener">MaxPreps</a> · school athletics pages.</div>
+          </div>
+          <div class="update-card">
+            <h3>Log a Weekly Update</h3>
+            <div class="field-row">
+              <label for="wkLabel">Week label</label>
+              <input id="wkLabel" placeholder="Week 1 — Sep 10, 2026">
+            </div>
+            <div class="field-row">
+              <label for="wkSummary">Summary of changes</label>
+              <textarea id="wkSummary" placeholder="e.g. Oxford Hills beat Windham 21-14; Fryeburg fell to Brunswick…"></textarea>
+            </div>
+            <button class="btn" id="addLogBtn">Add to update log</button>
+            <button class="btn secondary" id="copyDataBtn" style="margin-left:8px">Copy data template</button>
+            <button class="btn secondary" id="downloadLogBtn" style="margin-left:8px">Download log (JSON)</button>
+            <div id="logList" style="margin-top:var(--space-4)"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOURCES -->
+      <section class="section" id="sources">
+        <div class="section-head">
+          <h2>Sources</h2>
+          <span class="hint">All data source-linked</span>
+        </div>
+        <div class="sources" id="sourcesList"></div>
+        <p class="foot">Western Maine 2026 Fall Sports Dashboard · data compiled <span id="genDate">—</span> from MPA bulletins, school athletics pages, and local news. Verify before citing; schedules and classifications can change.</p>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://perplexity.localhost","http://localhost:1420","http://127.0.0.1:1420","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>

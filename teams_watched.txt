@@ -1,0 +1,28 @@
+# Western Maine 2026 Fall Sports — Teams Watched
+# All teams currently included in the dashboard schedule, athlete list, and standings.
+# Source: /home/user/workspace/western-maine-sports/js/data.js (regenerate after data updates).
+# Total: 81 teams.
+
+## Focus teams (highlight first)
+Oxford Hills (Class A North FB / Class A North FH)
+Fryeburg Academy (Class B North FB / Class B South FH)
+Winthrop (Class D South FB, golf)
+
+## Football
+Bangor, Bedford, Belfast, Biddeford, Bonny Eagle, Brewer, Brunswick, Buckfield,
+Camden Hills, Cape Elizabeth, Cheverus, Cony, Deering, Dirigo, Dover, Edward Little,
+Ellsworth, Falmouth, Foxcroft Academy, Freeport, Gardiner, Gorham, Gray-New Gloucester,
+Greely, Hall-Dale, Hampden Academy, Hermon, John Bapst, Kennebunk, Lake Region, Lawrence,
+Leavitt, Lewiston, Lincoln Academy, Lisbon, Madison, Maine Central Institute, Maranacook,
+Marshwood, Massabesic, Mattanawcook Academy, Medomak Valley, Messalonskee, Morse, Mount Abram,
+Mount Blue, Mount View, Mountain Valley, Mt. Ararat, Noble, Nokomis, North Haven,
+North Yarmouth Academy, Oak Hill, Oceanside, Old Town, Orono, Oxford Hills, Poland Regional,
+Portland, Richmond, Salem, Sanford, Scarborough, Skowhegan, South Portland, Spruce Mountain,
+Sumner, Thornton Academy, Waterville, Waynflete, Wells, Westbrook, Windham, Winslow,
+Winthrop, Yarmouth, York
+
+## Other sports (soccer / field hockey / cross country / volleyball)
+Belfast, Camden Hills, Cape Elizabeth, Cheverus, Cony, Deering, Ellsworth, Falmouth,
+Freeport, Gardiner, Hampden Academy, Leavitt, Lewiston, Maranacook, Marshwood, Messalonskee,
+Poland Regional, Richmond, Sanford, Scarborough, Spruce Mountain, Waterville, Wells,
+Westbrook, Windham, Winthrop, York
