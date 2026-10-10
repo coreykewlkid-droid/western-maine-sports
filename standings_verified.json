@@ -70,5 +70,29 @@
     "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
     "sourceNote": "MPA 2026-27 Class South-B field hockey table copied October 10; page update timestamp not supplied.",
     "tournamentIndex": 8.673
+  },
+  {
+    "team": "Fryeburg Academy",
+    "sport": "Boys Soccer",
+    "classification": "B",
+    "region": "South",
+    "rank": 2,
+    "record": "8-2-1",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 Class South-B boys soccer table copied October 10; page update timestamp not supplied.",
+    "tournamentIndex": 93.291
+  },
+  {
+    "team": "Poland Regional",
+    "sport": "Boys Soccer",
+    "classification": "B",
+    "region": "South",
+    "rank": 9,
+    "record": "4-6-2",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 Class South-B boys soccer table copied October 10; page update timestamp not supplied.",
+    "tournamentIndex": 41.939
   }
 ]

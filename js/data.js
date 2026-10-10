@@ -8168,7 +8168,7 @@ window.WM_DATA = {
     }
   },
   "standings": {
-    "lastUpdated": "2026-10-10 — 6 verified standings; others pending",
+    "lastUpdated": "2026-10-10 — 8 verified standings; others pending",
     "rows": [
       {
         "team": "Buckfield",
@@ -8279,15 +8279,17 @@ window.WM_DATA = {
       {
         "team": "Fryeburg Academy",
         "sport": "Boys Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 2,
+        "record": "8-2-1",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 8, 2026: Fryeburg Academy 9–1 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
         "classification": "B",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA 2026-27 Class South-B boys soccer table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 93.291
       },
       {
         "team": "Fryeburg Academy",
@@ -8443,15 +8445,17 @@ window.WM_DATA = {
       {
         "team": "Poland Regional",
         "sport": "Boys Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 9,
+        "record": "4-6-2",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 7, 2026: Greely 5–0 Poland Regional",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 1,
         "classification": "B",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA 2026-27 Class South-B boys soccer table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 41.939
       },
       {
         "team": "Poland Regional",
