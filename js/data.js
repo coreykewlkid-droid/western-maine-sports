@@ -8168,7 +8168,7 @@ window.WM_DATA = {
     }
   },
   "standings": {
-    "lastUpdated": "2026-10-10 — official rankings pending verification",
+    "lastUpdated": "2026-10-10 — 3 verified standings; others pending",
     "rows": [
       {
         "team": "Buckfield",
@@ -8381,41 +8381,47 @@ window.WM_DATA = {
       {
         "team": "Oxford Hills",
         "sport": "Boys Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 11,
+        "record": "0-11-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 6, 2026: Messalonskee 4–1 Oxford Hills",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 2,
         "classification": "A",
         "region": "North",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 0.0
       },
       {
         "team": "Oxford Hills",
         "sport": "Girls Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 11,
+        "record": "0-9-1",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 6, 2026: Messalonskee 3–1 Oxford Hills",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 2,
         "classification": "A",
         "region": "North",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 2.041
       },
       {
         "team": "Oxford Hills",
         "sport": "Field Hockey",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 9,
+        "record": "3-9-1",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 7, 2026: Mt. Ararat 2–0 Oxford Hills",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "A",
+        "region": "North",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 30.867
       },
       {
         "team": "Poland Regional",
@@ -8601,7 +8607,7 @@ window.WM_DATA = {
       }
     ],
     "football": [],
-    "note": "The September preseason predictions have been removed. Official ranks, full-season records and playoff eligibility are withheld until verified against the current MPA standings. Football has separate seeding rules. Listed scores are reported results; missing scores are not losses."
+    "note": "Oxford Hills standings are from MPA tables supplied October 10; the page update timestamp was not included. Other official rankings remain pending. Qualifying/non-qualifying labels during the season are provisional, not final playoff decisions. Football has separate seeding rules. Missing scores are not losses."
   },
   "updateLog": [
     {

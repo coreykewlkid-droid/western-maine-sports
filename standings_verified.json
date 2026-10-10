@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "team": "Oxford Hills",
+    "sport": "Field Hockey",
+    "classification": "A",
+    "region": "North",
+    "rank": 9,
+    "record": "3-9-1",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
+    "tournamentIndex": 30.867
+  },
+  {
+    "team": "Oxford Hills",
+    "sport": "Boys Soccer",
+    "classification": "A",
+    "region": "North",
+    "rank": 11,
+    "record": "0-11-0",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
+    "tournamentIndex": 0.0
+  },
+  {
+    "team": "Oxford Hills",
+    "sport": "Girls Soccer",
+    "classification": "A",
+    "region": "North",
+    "rank": 11,
+    "record": "0-9-1",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
+    "tournamentIndex": 2.041
+  }
+]
