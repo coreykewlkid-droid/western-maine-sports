@@ -8168,7 +8168,7 @@ window.WM_DATA = {
     }
   },
   "standings": {
-    "lastUpdated": "2026-10-10 — 11 verified standings; others pending",
+    "lastUpdated": "2026-10-10 — 14 verified standings; others pending",
     "rows": [
       {
         "team": "Buckfield",
@@ -8212,15 +8212,17 @@ window.WM_DATA = {
       {
         "team": "Dirigo",
         "sport": "Football",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 5,
+        "record": "2-4",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 9, 2026: Winthrop 19–6 Dirigo",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "D",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
+        "crabtreeIndex": 89.216
       },
       {
         "team": "Dirigo",
@@ -8324,15 +8326,17 @@ window.WM_DATA = {
       {
         "team": "Mountain Valley",
         "sport": "Football",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 7,
+        "record": "1-4",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 2, 2026: Mountain Valley 20–0 Belfast",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 1,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "D",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
+        "crabtreeIndex": 66.667
       },
       {
         "team": "Mountain Valley",
@@ -8434,15 +8438,17 @@ window.WM_DATA = {
       {
         "team": "Poland Regional",
         "sport": "Football",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 6,
+        "record": "1-5",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 8, 2026: Morse 40–6 Poland Regional",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "D",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
+        "crabtreeIndex": 80.556
       },
       {
         "team": "Poland Regional",

@@ -130,5 +130,41 @@
     "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
     "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
     "tournamentIndex": 45.612
+  },
+  {
+    "team": "Dirigo",
+    "sport": "Football",
+    "classification": "D",
+    "region": "South",
+    "rank": 5,
+    "record": "2-4",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
+    "crabtreeIndex": 89.216
+  },
+  {
+    "team": "Poland Regional",
+    "sport": "Football",
+    "classification": "D",
+    "region": "South",
+    "rank": 6,
+    "record": "1-5",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
+    "crabtreeIndex": 80.556
+  },
+  {
+    "team": "Mountain Valley",
+    "sport": "Football",
+    "classification": "D",
+    "region": "South",
+    "rank": 7,
+    "record": "1-4",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
+    "crabtreeIndex": 66.667
   }
 ]
