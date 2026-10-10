@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "title": "Western Maine 2026 Fall Sports Dashboard",
+    "season": "Fall 2026",
+    "generated": "2026-09-03",
+    "seasonDates": {
+      "firstPractice": "Aug 17, 2026",
+      "firstCountableGame": "Sep 3, 2026",
+      "regularSeasonClose": "Oct 18-25, 2026 (sport-dependent)",
+      "stateChampionships": "Late Oct \u2013 Nov 8, 2026"
+    },
+    "coverage": "Football, Boys & Girls Soccer, Field Hockey, Cross Country, Volleyball (+ standout golfers)"
+  },
+  "realignments": {
+    "football": {
+      "season": "2025 & 2026 (MPA Football Committee, approved Jan 2025)",
+      "cutoffs": "Class A 850+ \u00b7 Class B 635-849 \u00b7 Class C 400-634 (statewide) \u00b7 Class D 0-399",
+      "changes": [
+        "Class A grew from 12 to 14 teams \u2014 Deering and Massabesic moved up from Class B.",
+        "Class C and Class D moved to statewide playoff brackets (no North/South split).",
+        "Class A and Class B state championships remain North region champ vs. South region champ."
+      ],
+      "classes": [
+        {
+          "class": "Class A",
+          "region": "North",
+          "teams": "Bangor, Deering, Edward Little, Lewiston, Oxford Hills, Portland, Windham"
+        },
+        {
+          "class": "Class A",
+          "region": "South",
+          "teams": "Bonny Eagle, Massabesic, Noble, Sanford, Scarborough, South Portland, Thornton Academy"
+        },
+        {
+          "class": "Class B",
+          "region": "North",
+          "teams": "Brunswick, Cony, Fryeburg Academy, Lawrence, Messalonskee, Mt. Blue, Skowhegan"
+        },
+        {
+          "class": "Class B",
+          "region": "South",
+          "teams": "Biddeford, Cheverus, Gorham, Falmouth, Kennebunk, Marshwood, Westbrook"
+        },
+        {
+          "class": "Class C",
+          "region": "Statewide",
+          "teams": "Brewer, Foxcroft Academy, Gardiner, Greely, Hampden Academy, Hermon, Leavitt, Medomak Valley, Nokomis, Oceanside, Old Town, Wells, York"
+        },
+        {
+          "class": "Class D",
+          "region": "North",
+          "teams": "Belfast, John Bapst, Madison, Maine Central Institute, Maranacook, Mattanawcook Academy, Winslow"
+        },
+        {
+          "class": "Class D",
+          "region": "South",
+          "teams": "Dirigo, Freeport, Lisbon, Morse, Mountain Valley, Oak Hill, Poland, Winthrop/Monmouth/Hall-Dale"
+        }
+      ]
+    },
+    "fieldHockey": {
+      "season": "2025-26 (MPA Field Hockey Bulletin, approved Jan 2025)",
+      "cutoffs": "Class A 665+ \u00b7 Class B 435-664 \u00b7 Class C 0-434",
+      "changes": [
+        "Three-class structure (A/B/C) by enrollment, split North and South within each class.",
+        "Class A South is the largest division (15 schools); Cheverus petitioned in."
+      ],
+      "classes": [
+        {
+          "class": "Class A",
+          "region": "North",
+          "teams": "Lewiston, Edward Little, Bangor, Oxford Hills, Hampden, Mt. Ararat, Camden Hills, Brunswick, Messalonskee, Skowhegan, Mt. Blue, Brewer"
+        },
+        {
+          "class": "Class A",
+          "region": "South",
+          "teams": "Thornton, Portland/Deering, Sanford, Bonny Eagle, So. Portland/Westbrook, Noble, Windham, Scarborough, Massabesic, Gorham, Kennebunk, Falmouth, Biddeford, Marshwood, Cheverus"
+        },
+        {
+          "class": "Class B",
+          "region": "North",
+          "teams": "Nokomis, Cony, Gardiner, Hermon, Leavitt, Old Town, Erskine, Lawrence, John Bapst, Oceanside, Belfast"
+        },
+        {
+          "class": "Class B",
+          "region": "South",
+          "teams": "Fryeburg, Freeport, Morse, Greely, GNG/NYA, Yarmouth, Lincoln, Cape Elizabeth, York, Lake Region, Poland"
+        },
+        {
+          "class": "Class C",
+          "region": "North",
+          "teams": "Foxcroft, Mountain Valley, Winslow, Orono, Central, Mattanawcook, Mt. View, Dexter, MCI, Dirigo, Piscataquis, Stearns/Schenck"
+        },
+        {
+          "class": "Class C",
+          "region": "South",
+          "teams": "Spruce Mountain, Wells, Oak Hill, Lisbon, Traip, Sacopee Valley, Waynflete, Hall-Dale, Winthrop/Maranacook, Telstar, Boothbay"
+        }
+      ]
+    },
+    "soccer": {
+      "season": "2025-26 (MPA Soccer Bulletin)",
+      "cutoffs": "Class A, B, C, D by enrollment + 8-player class",
+      "changes": [
+        "Boys and girls soccer each run Class A, B, C, D plus an 8-player division.",
+        "Regional tournaments in late October; state championships early November."
+      ],
+      "classes": [
+        {
+          "class": "Tournament sites",
+          "region": "Class A North",
+          "teams": "Cameron Stadium, Bangor (girls 4:30 / boys 6:00)"
+        },
+        {
+          "class": "Tournament sites",
+          "region": "Class A South",
+          "teams": "Falmouth High School"
+        },
+        {
+          "class": "Tournament sites",
+          "region": "Class C North",
+          "teams": "Hampden Academy"
+        }
+      ]
+    },
+    "crossCountry": {
+      "season": "2025-26 (MPA)",
+      "cutoffs": "Class A 700+ \u00b7 Class B 400-699 \u00b7 Class C 0-399",
+      "changes": [
+        "State championship meet Nov 1, 2025; New Englands Nov 8.",
+        "No North/South split \u2014 classes compete as single statewide fields."
+      ],
+      "classes": [
+        {
+          "class": "Class A",
+          "region": "Statewide",
+          "teams": "Enrollment 700+ (e.g., Lewiston, Portland, Bangor, Oxford Hills, Windham, Bonny Eagle, Thornton Academy)"
+        },
+        {
+          "class": "Class B",
+          "region": "Statewide",
+          "teams": "Enrollment 400-699 (e.g., Fryeburg Academy, Greely, Cony, Messalonskee, Brunswick, Leavitt)"
+        },
+        {
+          "class": "Class C",
+          "region": "Statewide",
+          "teams": "Enrollment 0-399 (e.g., Winthrop, Dirigo, Lisbon, Mountain Valley, Orono)"
+        }
+      ]
+    },
+    "volleyball": {
+      "season": "2025-26 (MPA Volleyball Bulletin)",
+      "cutoffs": "Class B/A (combined), Class C, Class D",
+      "changes": [
+        "Girls volleyball runs Class B/A, Class C, and Class D state championships Nov 1.",
+        "State semis Oct 29; Class D, C, and B/A state finals all Nov 1."
+      ],
+      "classes": [
+        {
+          "class": "Class B/A",
+          "region": "State",
+          "teams": "Combined Class A & B schools; state final at USM, 3:00 (B) / 5:30 (A)"
+        },
+        {
+          "class": "Class C",
+          "region": "State",
+          "teams": "State final at Hampden Academy, 1:00"
+        },
+        {
+          "class": "Class D",
+          "region": "State",
+          "teams": "State final at Brewer High School, 12:00"
+        }
+      ]
+    }
+  }
+}

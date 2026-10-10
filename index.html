@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Western Maine 2026 Fall Sports Dashboard</title>
-<meta name="description" content="Western Maine 2026 fall sports dashboard: football, soccer, field hockey, cross country, volleyball schedules, standout athletes, class realignments, and weekly standings updates.">
+<meta name="description" content="Western Maine 2026 fall sports dashboard: football, soccer, field hockey, cross country, source-linked schedules, reported scores, and playoff information for local coverage schools.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -40,17 +40,17 @@
       <div class="nav-label">Sections</div>
       <nav class="nav" id="nav">
         <a href="#overview" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>Overview</a>
-        <a href="#schedule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Schedule</a>
+        <a href="#schedule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Schedules &amp; Scores</a>
         <a href="#matchups"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6-6 6 6M6 15l6 6 6-6"/></svg>Key Matchups</a>
-        <a href="#athletes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>Athletes</a>
-        <a href="#realignments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18M9 3v6M15 9v6"/></svg>Realignments</a>
+        <a href="#athletes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>Coverage</a>
+        <a href="#realignments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18M9 3v6M15 9v6"/></svg>Classification Archive</a>
         <a href="#standings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg>Standings</a>
         <a href="#update"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-9-9M21 3v6h-6"/></svg>Update Center</a>
         <a href="#sources"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Sources</a>
       </nav>
       <div class="focus-card">
         <b>Focus teams</b>
-        Oxford Hills (Class A N) · Fryeburg Academy (Class B N) · Winthrop (Class D S)
+        Mountain Valley · Dirigo · Telstar · Buckfield · Oxford Hills · Gould · Fryeburg · Sacopee Valley · Poland
       </div>
     </aside>
 
@@ -60,10 +60,10 @@
       <section class="section" id="overview">
         <div class="hero">
           <h1>Western Maine 2026 Fall Sports</h1>
-          <p id="heroSub">Football, boys &amp; girls soccer, field hockey, cross country, and volleyball across the MPA Western Maine region — sortable schedules, standout-athlete leaderboards, class realignments, and a weekly standings tracker through November.</p>
+          <p id="heroSub">Local schedules, reported results and playoff information for Western Maine Report’s nine coverage schools. Each game links to its source.</p>
           <div class="pill-row">
-            <span class="pill">First countable game: Sep 3, 2026</span>
-            <span class="pill">State championships: late Oct – Nov 8</span>
+            <span class="pill">Snapshot checked: October 10, 2026</span>
+            <span class="pill">Soccer state finals: November 7</span>
             <span class="pill">MPA classifications</span>
           </div>
         </div>
@@ -74,8 +74,8 @@
       <!-- KEY MATCHUPS -->
       <section class="section" id="matchups">
         <div class="section-head">
-          <h2>Key Matchups</h2>
-          <span class="hint">Oxford Hills &amp; Fryeburg Academy pinned</span>
+          <h2>Next Games</h2>
+          <span class="hint">Next listed games for coverage schools</span>
         </div>
         <div class="matchup-grid" id="matchupGrid"></div>
       </section>
@@ -83,13 +83,13 @@
       <!-- SCHEDULE -->
       <section class="section" id="schedule">
         <div class="section-head">
-          <h2>Regular Season Schedule</h2>
+          <h2>Schedules &amp; Reported Scores</h2>
           <span class="hint">Sortable · click column headers</span>
         </div>
-        <p class="section-intro">Upcoming regular-season games beginning September 3, 2026. Filter by sport, search by team, and sort by date or matchup. Schedule rows now cover <b>football, boys &amp; girls soccer, field hockey, and cross country meets</b> — XC meet rows show the host school, participating teams, start time, and a source link. Volleyball matches are added as verified schedules publish (MaxPreps / school pages). Every XC row is verified from the official MPA SportPageSchedule (date, time, location, team rosters). Times shown where published; some are listed TBA by the source.</p>
+        <p class="section-intro">Choose upcoming games, reported finals, or games with a missing result. Completed scores list the two teams without implying home or away. Dates and start times follow the linked source; confirm changes with the school.</p><div class="warn-note" id="coverageNote"></div>
 
         <div class="toolbar" id="schedToolbar">
-          <div class="chip-group" id="sportChips"></div>
+          <div class="chip-group" id="sportChips"></div><select class="select" id="resultFilter" aria-label="Game status"><option value="upcoming">Upcoming games</option><option value="completed">Reported finals</option><option value="pending">Missing results</option><option value="all">All entries</option></select>
           <div class="search">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
             <input type="search" id="teamSearch" placeholder="Search team or town…" aria-label="Search teams">
@@ -113,11 +113,11 @@
                 <tr>
                   <th data-sort="date" class="sorted">Date <span class="arrow">▾</span></th>
                   <th data-sort="sport">Sport <span class="arrow"></span></th>
-                  <th data-sort="away">Away <span class="arrow"></span></th>
-                  <th>vs</th>
-                  <th data-sort="home">Home <span class="arrow"></span></th>
+                  <th data-sort="away">Team <span class="arrow"></span></th>
+                  <th>Score / venue</th>
+                  <th data-sort="home">Opponent <span class="arrow"></span></th>
                   <th data-sort="time">Time <span class="arrow"></span></th>
-                  <th>Region</th>
+                  <th>Source / notes</th>
                 </tr>
               </thead>
               <tbody id="schedBody"></tbody>
@@ -129,20 +129,16 @@
       <!-- ATHLETES -->
       <section class="section" id="athletes">
         <div class="section-head">
-          <h2>Standout Athletes</h2>
-          <span class="hint">Source-verified · 2026 watch list</span>
-        </div>
-        <p class="section-intro">A watch-list of Western Maine fall athletes to follow, including golf — Winthrop's <b>Drew Mertzel</b> (defending Class C state champion) and <b>Kay Allaire</b> (Class C girls runner-up) — plus football, soccer, and field hockey standouts. Every entry links to its original source.</p>
-        <div class="ath-grid" id="athGrid"></div>
+          <h2>Coverage Schools</h2><span class="hint">WMR coverage</span></div><p class="section-intro">Nine local schools are the focus. Opponents appear only when playing a coverage school. Gould’s prep-school results are checked separately. Cross country and volleyball still need a fresh source check.</p><div class="ath-grid" id="athGrid"></div>
       </section>
 
       <!-- REALIGNMENTS -->
       <section class="section" id="realignments">
         <div class="section-head">
-          <h2>Team Class Realignments</h2>
-          <span class="hint">MPA 2025–2026 cycle</span>
+          <h2>September Classification Archive</h2>
+          <span class="hint">Reference only — not reverified</span>
         </div>
-        <p class="section-intro">Maine Principals' Association classifications and realignment changes. Football alignments are verified for the 2025 &amp; 2026 cycle; other sports reflect the current MPA bulletins (2025-26) — re-verify when the MPA posts 2026-27 sport bulletins.</p>
+        <p class="section-intro">This section preserves the September classification reference. It was not reverified in the October refresh; consult the current MPA bulletin before citing a class or region.</p>
         <div class="realign-tabs" id="realignTabs"></div>
         <div id="realignContent"></div>
       </section>
@@ -153,12 +149,12 @@
           <h2>Standings &amp; Playoff Tracker</h2>
           <span class="hint" id="standUpdated">—</span>
         </div>
-        <p class="section-intro">Regional standings and playoff eligibility tracked weekly. The table below is a football preseason baseline; soccer, field hockey, cross country, and volleyball standings are added weekly as MPA Heal Point reports publish. Labels reflect preseason outlook only until computed standings are available.</p>
+        <p class="section-intro">Official MPA rankings could not be retrieved during this refresh. The table shows the latest reported result for each covered team and sport. Rank and full-season record remain pending. <a href="https://www.mpa.cc/TournamentCentralRankings.aspx" target="_blank" rel="noopener">Open official MPA standings ↗</a></p>
         <div class="table-wrap" style="overflow-x:auto">
           <table class="stand-table" id="standTable">
             <thead>
               <tr>
-                <th>Team</th><th>Class</th><th>Record</th><th>Heal Pts</th><th>Playoff Status</th><th>Key Upcoming</th>
+                <th>Team</th><th>Sport</th><th>Official rank</th><th>Season record</th><th>Verification</th><th>Latest reported result</th>
               </tr>
             </thead>
             <tbody id="standBody"></tbody>
@@ -178,10 +174,10 @@
           <div class="update-card">
             <h3>Weekly Workflow</h3>
             <ol class="steps">
-              <li><b>Check MPA standings.</b> Open the MPA sport pages (football Heal Points, soccer, field hockey, volleyball, XC) and copy the latest standings.</li>
+              <li><b>Check MPA standings.</b> Open the MPA sport pages (football seeding, soccer, field hockey and volleyball; check XC meet qualification separately) and copy the latest standings.</li>
               <li><b>Update results.</b> Fill in wins/losses from the past week's games using downtownme.com, MaxPreps, and school athletics pages.</li>
-              <li><b>Re-tag playoff status.</b> Set each team to <i>In</i>, <i>Bubble</i>, or <i>Out</i> based on Heal Point position and tournament cut lines.</li>
-              <li><b>Note key matchups.</b> Add the next week's biggest games for Oxford Hills, Fryeburg Academy, and Winthrop.</li>
+              <li><b>Re-tag playoff status.</b> Record a dated official rank within its sport, class and region. Label current playoff position separately from a clinched berth.</li>
+              <li><b>Note key matchups.</b> Add the next week's biggest games for the nine coverage schools.</li>
               <li><b>Log the update.</b> Add a dated entry to the update log below, then redeploy.</li>
             </ol>
             <div class="update-note">Sources to check each week: <a href="https://www.mpa.cc" target="_blank" rel="noopener">mpa.cc</a> · <a href="https://www.downtownme.com/sports/sports.asp" target="_blank" rel="noopener">downtownme.com</a> · <a href="https://www.maxpreps.com/me/football/" target="_blank" rel="noopener">MaxPreps</a> · school athletics pages.</div>
@@ -219,333 +215,5 @@
 
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
-<script data-pplx-inline-edit>
-(function () {
-  if (window === window.top) return;
-
-  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://perplexity.localhost","http://localhost:1420","http://127.0.0.1:1420","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
-  const MAX_FONT_BYTES = 500 * 1024;
-  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
-  let scrollForwarding = false;
-  let scrollRaf = 0;
-  let trustedTopOrigin = null;
-
-  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
-  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
-  // across multiple labels.
-  function matchesAllowedOrigin(origin) {
-    if (!origin) return false;
-    for (const entry of allowedParentOrigins) {
-      if (!entry.includes("*")) {
-        if (entry === origin) return true;
-        continue;
-      }
-      const pattern = new RegExp(
-        "^" +
-          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
-          "$",
-      );
-      if (pattern.test(origin)) return true;
-    }
-    return false;
-  }
-
-  // Trust decision: when the sender is same-origin-visible (event.origin is a
-  // real origin like https://www.perplexity.ai) we trust event.origin directly.
-  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
-  // broker's stamped `parentOrigin` to identify the top window. The fallback
-  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
-  // on the response path (see postToTrustedTop) to ensure replies can't be
-  // delivered to anyone but the actual top window of that claimed origin.
-  function getTrustedParentOrigin(event) {
-    const forwardedParentOrigin =
-      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
-    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
-    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
-  }
-
-  // All responses go to window.top with targetOrigin = the allowlisted origin.
-  // An attacker that iframes us inside their own null-origin broker can claim
-  // any parentOrigin they like, but the browser will drop the reply whenever
-  // the real top's origin doesn't match — so the screenshot never leaves.
-  function postToTrustedTop(message) {
-    if (!trustedTopOrigin) return;
-    try {
-      window.top.postMessage(message, trustedTopOrigin);
-    } catch (_error) {}
-  }
-
-  function inlineAll(original, clone) {
-    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
-
-    try {
-      const computedStyle = getComputedStyle(original);
-      // cssText on a computed style is the serialized declaration in modern
-      // Chromium/Safari — a single read beats enumerating ~400 longhand
-      // properties. Firefox returns "" here, so we fall back on empty.
-      const serialized = computedStyle.cssText;
-      if (serialized) {
-        clone.style.cssText = serialized;
-      } else {
-        const parts = new Array(computedStyle.length);
-        for (let index = 0; index < computedStyle.length; index += 1) {
-          const property = computedStyle[index];
-          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
-        }
-        clone.style.cssText = parts.join("");
-      }
-    } catch (_error) {}
-
-    const originalChildren = original.children;
-    const clonedChildren = clone.children;
-    for (
-      let index = 0;
-      index < originalChildren.length && index < clonedChildren.length;
-      index += 1
-    ) {
-      inlineAll(originalChildren[index], clonedChildren[index]);
-    }
-  }
-
-  function extractFontUrl(srcValue) {
-    const matches = [
-      ...srcValue.matchAll(
-        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
-      ),
-    ];
-    if (matches.length === 0) return null;
-    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
-    if (woff2) return woff2[1];
-    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
-    if (woff) return woff[1];
-    return matches[0][1];
-  }
-
-  // Cache resolved font URL -> data URI across captures. Fonts on a page
-  // essentially never change, and a batch run emits multiple captures back to
-  // back — without this we'd refetch + re-base64 every time.
-  const fontDataUriCache = new Map();
-  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
-
-  async function fetchAsDataUri(url) {
-    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
-    let dataUri = null;
-    try {
-      const response = await fetch(url, { mode: "cors", credentials: "omit" });
-      if (response.ok) {
-        const blob = await response.blob();
-        if (blob.size <= MAX_FONT_BYTES) {
-          dataUri = await new Promise((resolve) => {
-            const reader = new FileReader();
-            reader.onloadend = () =>
-              resolve(typeof reader.result === "string" ? reader.result : null);
-            reader.onerror = () => resolve(null);
-            reader.readAsDataURL(blob);
-          });
-        }
-      }
-    } catch (_error) {
-      dataUri = null;
-    }
-    fontDataUriCache.set(url, dataUri);
-    return dataUri;
-  }
-
-  function collectFontFaceRuleTexts() {
-    const rules = [];
-    for (const sheet of document.styleSheets) {
-      let cssRules;
-      try {
-        cssRules = sheet.cssRules;
-      } catch (_error) {
-        continue;
-      }
-      if (!cssRules) continue;
-      for (const rule of cssRules) {
-        const cssText = rule.cssText || "";
-        if (cssText.startsWith("@font-face")) rules.push(cssText);
-      }
-    }
-    return rules;
-  }
-
-  async function buildInlinedFontCss() {
-    const ruleTexts = collectFontFaceRuleTexts();
-    if (ruleTexts.length === 0) return null;
-
-    const resolved = ruleTexts.map((cssText) => {
-      if (!SRC_DECLARATION_RE.test(cssText)) return null;
-      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
-      if (!srcMatch) return null;
-      const url = extractFontUrl(srcMatch[1]);
-      if (!url) return null;
-      try {
-        return { cssText, url: new URL(url, document.baseURI).href };
-      } catch (_error) {
-        return null;
-      }
-    });
-
-    const dataUris = await Promise.all(
-      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
-    );
-
-    const inlined = [];
-    let totalBytes = 0;
-    for (let index = 0; index < resolved.length; index += 1) {
-      const entry = resolved[index];
-      const dataUri = dataUris[index];
-      if (!entry || !dataUri) continue;
-      const approxBytes = dataUri.length * 0.75;
-      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
-      totalBytes += approxBytes;
-      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
-    }
-    return inlined.length > 0 ? inlined.join("\n") : null;
-  }
-
-  function stripExternal(clone) {
-    const images = clone.querySelectorAll("img");
-    for (let index = 0; index < images.length; index += 1) {
-      const src = images[index].getAttribute("src");
-      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
-    }
-
-    const elements = clone.querySelectorAll("*");
-    for (let index = 0; index < elements.length; index += 1) {
-      const style = elements[index].style.cssText;
-      if (style && style.includes("url(")) {
-        elements[index].style.cssText = style.replace(
-          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
-          "none",
-        );
-      }
-    }
-  }
-
-  function emitScroll() {
-    scrollRaf = 0;
-    if (!scrollForwarding) return;
-    postToTrustedTop({
-      type: "INLINE_EDIT_SCROLL",
-      scrollX: window.scrollX,
-      scrollY: window.scrollY,
-    });
-  }
-
-  window.addEventListener(
-    "scroll",
-    function () {
-      if (!scrollForwarding || scrollRaf) return;
-      scrollRaf = requestAnimationFrame(emitScroll);
-    },
-    { passive: true, capture: true },
-  );
-
-  async function handleCaptureRequest(event) {
-    const requestId = event.data.requestId;
-    const scrollX = window.scrollX;
-    const scrollY = window.scrollY;
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-
-    function postResult(dataUrl) {
-      postToTrustedTop({
-        type: "INLINE_EDIT_SCREENSHOT_RESULT",
-        requestId,
-        dataUrl,
-        scrollX,
-        scrollY,
-      });
-    }
-
-    try {
-      // Wait for any pending web fonts to resolve so both inline metrics and
-      // the @font-face inlining below see the same loaded faces.
-      if (document.fonts && document.fonts.ready) {
-        try {
-          await document.fonts.ready;
-        } catch (_error) {}
-      }
-
-      const clone = document.documentElement.cloneNode(true);
-      inlineAll(document.documentElement, clone);
-
-      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
-      for (let index = 0; index < removedNodes.length; index += 1) {
-        removedNodes[index].remove();
-      }
-
-      stripExternal(clone);
-
-      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
-      // can resolve them — external font URLs aren't fetched during
-      // foreignObject rendering, which would otherwise force a fallback face
-      // and change text metrics.
-      const inlinedFontCss = await buildInlinedFontCss();
-      if (inlinedFontCss) {
-        const styleEl = document.createElement("style");
-        styleEl.textContent = inlinedFontCss;
-        const head = clone.querySelector("head");
-        if (head) head.appendChild(styleEl);
-        else clone.insertBefore(styleEl, clone.firstChild);
-      }
-
-      const html = new XMLSerializer().serializeToString(clone);
-      const svg =
-        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
-        '<foreignObject width="100%" height="100%">' +
-        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
-        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
-        html +
-        "</div></div></foreignObject></svg>";
-      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
-      const image = new Image();
-      image.onload = function () {
-        const canvas = document.createElement("canvas");
-        canvas.width = width;
-        canvas.height = height;
-        canvas.getContext("2d").drawImage(image, 0, 0);
-        postResult(canvas.toDataURL("image/png"));
-      };
-      image.onerror = function () {
-        postResult(null);
-      };
-      image.src = svgUrl;
-    } catch (_error) {
-      postResult(null);
-    }
-  }
-
-  window.addEventListener("message", function (event) {
-    if (!event.data) return;
-    // Only accept messages from the direct parent frame. Blocks sibling /
-    // unrelated-window postMessage senders that could otherwise reach us.
-    if (event.source !== window.parent) return;
-
-    const trustedParentOrigin = getTrustedParentOrigin(event);
-    if (!trustedParentOrigin) return;
-    trustedTopOrigin = trustedParentOrigin;
-
-    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
-      scrollForwarding = true;
-      emitScroll();
-      return;
-    }
-
-    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
-      scrollForwarding = false;
-      if (scrollRaf) cancelAnimationFrame(scrollRaf);
-      scrollRaf = 0;
-      return;
-    }
-
-    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
-
-    handleCaptureRequest(event);
-  });
-})();
-
-
-</script></body>
+</body>
 </html>

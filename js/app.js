@@ -3,6 +3,8 @@
   const D = window.WM_DATA;
   const $ = (s,r=document)=>r.querySelector(s);
   const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
+  const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const today=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 
   /* ---- Theme toggle ---- */
   (function(){
@@ -38,62 +40,33 @@
 
   /* ---- Meta / KPIs ---- */
   $('#genDate').textContent=D.meta.generated;
-  $('#updatedLabel').textContent='Updated '+D.standings.lastUpdated.split('(')[0].trim();
+  $('#updatedLabel').textContent='Data checked '+D.meta.checked;
+  $('#coverageNote').textContent=D.meta.coverageNote;
   $('#standUpdated').textContent=D.standings.lastUpdated;
 
   const _dates=D.schedule.map(g=>{const m=g.dateRaw.split('.');return new Date(+m[2],+m[0]-1,+m[1]).getTime();}).filter(t=>!isNaN(t));
   const _fmt=t=>new Date(t).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
   const _range=_dates.length?`${_fmt(Math.min(..._dates))} – ${_fmt(Math.max(..._dates))}`:'';
   const kpis=[
-    {v:D.schedule.length, l:'Scheduled games', s:_range},
-    {v:5, l:'Fall sports covered', s:'FB · SOC · FH · XC · VB', accent:false},
-    {v:D.teams.filter(t=>t.highlight).length, l:'Focus teams', s:'Oxford Hills · Fryeburg · Winthrop', accent:true},
-    {v:D.athletes.length, l:'Athletes to watch', s:'Source-verified', accent:false},
+    {v:D.schedule.filter(g=>g.completed).length,l:'Reported scores',s:'Final scores supplied by linked sources'},
+    {v:D.schedule.filter(g=>!g.completed&&g.dateISO>=today&&!g.reviewNote).length,l:'Next listed games',s:'Confirm changes with schools'},
+    {v:D.teams.length,l:'Coverage schools',s:'WMR local coverage',accent:true},
+    {v:'Pending',l:'Official rankings',s:'MPA verification required'},
   ];
   $('#kpiGrid').innerHTML=kpis.map(k=>`<div class="kpi"><div class="v ${k.accent?'accent':''}">${k.v}</div><div class="l">${k.l}</div><div class="s">${k.s}</div></div>`).join('');
 
   /* ---- Key matchups (Oxford Hills + Fryeburg pinned) ---- */
-  const focusTeams=['Oxford Hills','Fryeburg Academy','Windham','Edward Little','Brunswick','Messalonskee','Lewiston','Lawrence','Cony','Portland','Bangor','Deering','Lisbon','Winthrop'];
-  function isFocus(g){
-    const f=focusTeams.some(t=>g.away.includes(t)||g.home.includes(t));
-    const big=['Oxford Hills','Fryeburg Academy','Winthrop'];
-    const pinned=big.some(t=>g.away.includes(t)||g.home.includes(t));
-    return {f,pinned};
-  }
-  // pick a curated set: first game for each focus team + rivalry-ish
-  const big=['Oxford Hills','Fryeburg Academy','Winthrop'];
-  const focus=[...big,'Windham','Edward Little','Brunswick','Messalonskee','Lewiston','Lawrence','Cony','Portland','Bangor','Deering','Lisbon'];
-  // two passes: pinned focus-team openers first, then other area teams
-  const seen=new Set();
-  const matchups=[];
-  function addPass(filterFn){
-    for(const g of D.schedule){
-      if(g.eventType==='meet') continue;   // XC meets live in the schedule table, not matchup cards
-      const pinned=big.some(t=>g.away.includes(t)||g.home.includes(t));
-      const f=focus.some(t=>g.away.includes(t)||g.home.includes(t));
-      if(!filterFn({f,pinned})) continue;
-      const key=[g.away,g.home].sort().join('|');
-      if(seen.has(key)) continue;
-      seen.add(key);
-      if(matchups.length>=8) break;
-      matchups.push({...g,pinned});
-    }
-  }
-  addPass(o=>o.pinned);          // pinned focus teams first
-  addPass(o=>o.f);               // then other Western ME focus teams
+  const matchups=D.schedule.filter(g=>!g.completed&&g.dateISO>=today&&!g.reviewNote).slice(0,8);
   $('#matchupGrid').innerHTML=matchups.map(g=>`
-    <div class="matchup${g.pinned?' pinned':''}" style="border-left-color:${sportColor(g.sport)}">
-      <div class="tag">${g.date} · ${g.time}</div>
-      <div class="teams">${g.away} <span class="vs">at</span> ${g.home}</div>
-      <div class="meta">
-        ${sportChip(g.sport)}
-        ${g.pinned?'<span class="badge accent">Focus</span>':'<span class="badge">'+(g.region||'')+'</span>'}
-      </div>
-    </div>`).join('');
+    <div class="matchup pinned" style="border-left-color:${sportColor(g.sport)}">
+      <div class="tag">${esc(g.date)} · ${esc(g.time)}</div>
+      <div class="teams">${esc(g.away)} <span class="vs">at</span> ${esc(g.home)}</div>
+      <div class="meta">${sportChip(g.sport)} <a class="src-link" href="${esc(g.sourceUrl)}" target="_blank" rel="noopener">Source ↗</a></div>
+    </div>`).join('')||'<p>No upcoming games verified in this snapshot.</p>';
 
   /* ---- Schedule table ---- */
   const tbody=$('#schedBody');
-  let sortKey='date', sortDir=1, activeSport='All', searchTerm='', westOnly=false;
+  let sortKey='date', sortDir=1, activeSport='All', searchTerm='', westOnly=false, gameStatus='upcoming';
 
   const SPORTS_ALL=['All',...Object.keys(SPORT_META)];
   $('#sportChips').innerHTML=SPORTS_ALL.map(s=>`<button class="chip${s==='All'?' active':''}" data-sport="${s}">${s}</button>`).join('');
@@ -102,6 +75,7 @@
     $$('#sportChips .chip').forEach(x=>x.classList.toggle('active',x===c));
     renderSched();
   }));
+  $('#resultFilter').addEventListener('change',e=>{gameStatus=e.target.value;sortDir=gameStatus==='completed'?-1:1;renderSched();});
   $('#teamSearch').addEventListener('input',e=>{searchTerm=e.target.value.toLowerCase();renderSched();});
   $('#westOnly').addEventListener('change',e=>{westOnly=e.target.checked;renderSched();});
   $('#sortSelect').addEventListener('change',e=>{sortKey=e.target.value;renderSched();});
@@ -111,6 +85,9 @@
 
   function filtered(){
     return D.schedule.filter(g=>{
+      if(gameStatus==='upcoming'&&(g.completed||g.dateISO<today||g.reviewNote)) return false;
+      if(gameStatus==='completed'&&!g.completed) return false;
+      if(gameStatus==='pending'&&(g.completed||g.dateISO>today)) return false;
       if(activeSport!=='All'&&g.sport!==activeSport) return false;
       if(westOnly&&g.region!=='Western ME') return false;
       if(searchTerm){
@@ -135,7 +112,7 @@
     const list=sorted(filtered());
     $('#schedCount').textContent=list.length+' items';
     if(!list.length){tbody.innerHTML='<tr class="empty-row"><td colspan="7">No games match your filters.</td></tr>';return;}
-    const FOCUS=['Oxford Hills','Fryeburg','Winthrop'];
+    const FOCUS=D.teams.map(t=>t.name);
     tbody.innerHTML=list.map(g=>{
       const isMeet=g.eventType==='meet';
       const ct=g.coveredTeams||[];
@@ -148,14 +125,15 @@
       } else {
         regionCell=`${g.region||'—'}${src?` <br>${src}`:''}`;
       }
+      if(g.reviewNote) regionCell+=`<div class="meet-teams">${esc(g.reviewNote)}</div>`;
       const at=g.location&&!isMeet?`<span class="loc-sub">${g.location}</span>`:'';
       return `<tr class="${pin?'pinned-row':''}${isMeet?' meet-row':''}">
         <td>${g.date}</td>
         <td>${sportChip(g.sport)}</td>
-        <td class="teams-cell">${g.away}</td>
-        <td style="color:var(--color-text-faint)">at</td>
-        <td class="teams-cell">${g.home}${at?`<br>${at}`:''}</td>
-        <td>${g.time}</td>
+        <td class="teams-cell">${esc(g.away)}</td>
+        <td style="font-variant-numeric:tabular-nums">${g.completed?`${g.awayScore}–${g.homeScore}`:"at"}</td>
+        <td class="teams-cell">${esc(g.home)}${at?`<br>${at}`:''}</td>
+        <td>${g.completed?"Final":g.dateISO<today?"Result pending":esc(g.time)}</td>
         <td class="loc-cell">${regionCell}</td>
       </tr>`;
     }).join('');
@@ -178,19 +156,7 @@
   });
   renderSched();
 
-  /* ---- Athletes ---- */
-  // sort: featured first, then alpha
-  const aths=[...D.athletes].sort((a,b)=>(b.featured?1:0)-(a.featured?1:0)||a.name.localeCompare(b.name));
-  $('#athGrid').innerHTML=aths.map((a,i)=>`
-    <div class="ath ${a.featured?'featured':''}">
-      ${a.featured?'<svg class="star" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>':''}
-      <div class="rank">#${i+1}</div>
-      <div class="name">${a.name}</div>
-      <div class="school">${a.school} · ${a.sport} · ${a.grade}</div>
-      <div class="stat">${a.stat}</div>
-      <div class="note">${a.note}</div>
-      <a class="src" href="${a.source}" target="_blank" rel="noopener">View source ↗</a>
-    </div>`).join('');
+  $('#athGrid').innerHTML=D.teams.map(t=>`<div class="ath"><div class="name">${esc(t.name)}</div><div class="note">${D.schedule.filter(g=>g.coveredTeams?.includes(t.name)).length} source-linked entries</div></div>`).join('');
 
   /* ---- Realignments ---- */
   const REALIGN_KEYS=[
@@ -231,15 +197,8 @@
     if(t.includes('out')) return 'out';
     return 'preseason';
   }
-  $('#standBody').innerHTML=D.standings.football.map(s=>`
-    <tr>
-      <td class="team">${s.team}</td>
-      <td>${s.class}</td>
-      <td style="font-variant-numeric:tabular-nums">${s.record}</td>
-      <td style="font-variant-numeric:tabular-nums">${s.heal}</td>
-      <td><span class="status ${statusClass(s.status)}">${s.status}</span></td>
-      <td style="font-size:var(--text-xs);color:var(--color-text-muted)">${s.key}</td>
-    </tr>`).join('');
+  $('#standBody').innerHTML=D.standings.rows.map(s=>`
+    <tr><td class="team">${esc(s.team)}</td><td>${esc(s.sport)}</td><td>${esc(s.rank)}</td><td>${esc(s.record)}</td><td>${esc(s.status)}</td><td>${esc(s.latest)}</td></tr>`).join('');
 
   /* ---- Update center: log (in-memory) ---- */
   let logEntries=[...D.updateLog];
@@ -257,8 +216,8 @@
   $('#copyDataBtn').addEventListener('click',async()=>{
     const tpl=`{
   "lastUpdated": "WEEK DATE (e.g. Sep 10, 2026 — Week 1)",
-  "football": [
-    {"team":"Oxford Hills","class":"A North","record":"W-L","heal":"HEAL PTS","status":"In / Bubble / Out","key":"next matchup"}
+  "rows": [
+    {"team":"Telstar","sport":"Boys Soccer","class":"VERIFY CLASS","region":"VERIFY REGION","rank":"OFFICIAL RANK","record":"W-L-T","sourceUrl":"OFFICIAL URL"}
   ],
   "note":"Replace preseason outlook with computed MPA Heal Point standings. Verify at mpa.cc."
 }`;
