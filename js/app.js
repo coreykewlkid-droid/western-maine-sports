@@ -190,15 +190,19 @@
 
   /* ---- Standings ---- */
   $('#standNote').textContent=D.standings.note;
-  function statusClass(s){
-    const t=s.toLowerCase();
-    if(t.includes('in ')||t.includes('clinched')||t.includes('contender')) return 'in';
-    if(t.includes('bubble')) return 'bubble';
-    if(t.includes('out')) return 'out';
-    return 'preseason';
+  function renderStandings(){
+    const sport=$('#standSport').value||'all';
+    const rows=D.standings.rows.filter(s=>sport==='all'||s.sport===sport);
+    $('#standBody').innerHTML=rows.map(s=>`<tr><td class="team">${esc(s.team)}</td><td>${esc(s.sport)}</td><td>${esc(s.classification)} / ${esc(s.region)}</td><td>${esc(s.rank)}</td><td>${esc(s.record)}</td><td>${esc(s.checked)}</td><td>${esc(s.status)}</td><td>${esc(s.latest)}</td></tr>`).join('');
+    const verified=rows.filter(s=>s.status==='Verified MPA snapshot');
+    $('#standBrief').value=verified.length?verified.slice(0,3).map(s=>`As of ${s.checked}, ${s.team} is No. ${s.rank} in ${s.sport}, ${s.classification==='8 Person'?'8-person':'Class '+s.classification} ${s.region}, with a ${s.record} record.`).join(' ')+(verified.length>3?' See the standings table for more teams.':'')+' Rankings determine playoff qualification and seeding; teams must advance through the playoffs to reach the state final.':`Official MPA rankings for ${sport==='all'?'our local teams':sport} are awaiting verification as of ${D.meta.checked}. Rankings determine playoff qualification and seeding; teams must advance through the playoffs to reach the state final. Reported scores are available below.`;
   }
-  $('#standBody').innerHTML=D.standings.rows.map(s=>`
-    <tr><td class="team">${esc(s.team)}</td><td>${esc(s.sport)}</td><td>${esc(s.rank)}</td><td>${esc(s.record)}</td><td>${esc(s.status)}</td><td>${esc(s.latest)}</td></tr>`).join('');
+  renderStandings();
+  $('#standSport').addEventListener('change',renderStandings);
+  $('#copyStandBrief').addEventListener('click',async()=>{
+    try{await navigator.clipboard.writeText($('#standBrief').value);$('#standCopyStatus').textContent=' Update copied.';}
+    catch(e){$('#standBrief').select();$('#standCopyStatus').textContent=' Select and copy the update above.';}
+  });
 
   /* ---- Update center: log (in-memory) ---- */
   let logEntries=[...D.updateLog];
@@ -215,9 +219,9 @@
   });
   $('#copyDataBtn').addEventListener('click',async()=>{
     const tpl=`{
-  "lastUpdated": "WEEK DATE (e.g. Sep 10, 2026 — Week 1)",
+  "checked": "2026-10-10",
   "rows": [
-    {"team":"Telstar","sport":"Boys Soccer","class":"VERIFY CLASS","region":"VERIFY REGION","rank":"OFFICIAL RANK","record":"W-L-T","sourceUrl":"OFFICIAL URL"}
+    {"team":"Telstar","sport":"Boys Soccer","classification":"VERIFY CLASS","region":"VERIFY REGION","rank":1,"record":"W-L-T","sourceUrl":"OFFICIAL URL"}
   ],
   "note":"Replace preseason outlook with computed MPA Heal Point standings. Verify at mpa.cc."
 }`;

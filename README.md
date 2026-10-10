@@ -21,3 +21,9 @@ Open `index.html` in a browser or serve the repository with a local static web s
 The older `varsitymaine_updater.py`, `generate_data.py` and `build_xc.py` remain historical utilities. Their assumptions, coverage and sources need review before use. The current browser dashboard reads `js/data.js`.
 
 The update log form is a temporary in-session scratchpad. Download its JSON to retain notes; it does not update the published data.
+
+## Verified standings
+
+The standings section filters by sport and produces a brief update that can be copied for publication. Soccer classes/regions come from page 17 of the MPA 2026-27 bulletin; other unverified classifications remain pending. Gould has separate prep-school standings.
+
+Enter source-checked MPA snapshots in `standings_verified.json` as an array of objects with `team`, `sport`, `classification`, `region`, integer `rank`, `record` (W-L or W-L-T), ISO `checked` date and official `sourceUrl`. Run `python publish_data.py` to validate and incorporate them. Example structure: `{"team":"Telstar","sport":"Boys Soccer","classification":"8 Person","region":"South","rank":1,"record":"0-0-0","checked":"2026-10-10","sourceUrl":"https://www.mpa.cc/TournamentCentralRankings.aspx"}`. This is an illustrative format, not a real standing. Never infer official ranks or full-season records from the dashboard's incomplete score listings.

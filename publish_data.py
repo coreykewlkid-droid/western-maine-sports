@@ -63,6 +63,32 @@ for team in p['coverage']:
   if not relevant:continue
   completed=[x for x in relevant if x['completed']];pending=[x for x in relevant if not x['completed'] and x['dateISO']<=today];latest=completed[-1] if completed else None
   summary.append(dict(team=team,sport=sport,rank='—',record='Not verified',status='Official ranking pending',latest=(f"{latest['date']}: {latest['away']} {latest['awayScore']}–{latest['homeScore']} {latest['home']}" if latest else 'No verified result'),sourceUrl='https://www.mpa.cc/TournamentCentralRankings.aspx',pending=len(pending)))
+# Classifications verified from the MPA 2026-27 soccer bulletin, page 17.
+soccer_classes={'Oxford Hills':('A','North'),'Fryeburg Academy':('B','South'),'Poland Regional':('B','South'),'Sacopee Valley':('C','South'),'Dirigo':('8 Person','South')}
+for item in summary:
+ item.update(classification='Pending verification',region='Pending verification',checked=today)
+ if item['sport'] in ('Boys Soccer','Girls Soccer'):
+  cls=soccer_classes.get(item['team'])
+  if item['team']=='Mountain Valley':cls=('C' if item['sport']=='Boys Soccer' else '8 Person','South')
+  if item['team']=='Telstar':cls=('8 Person' if item['sport']=='Boys Soccer' else 'D','South')
+  if item['team']=='Buckfield':cls=('D' if item['sport']=='Boys Soccer' else '8 Person','South')
+  if cls:item.update(classification=cls[0],region=cls[1])
+ if item['team']=='Gould Academy':item.update(classification='Prep school',region='MAISAD / NEPSAC',status='Separate prep-school standings',rank='N/A',record='Not verified')
+verified=json.loads((R/'standings_verified.json').read_text())
+seen=set()
+for entry in verified:
+ key=(entry['team'],entry['sport'])
+ assert key not in seen,'Duplicate standings entry';seen.add(key)
+ assert isinstance(entry['rank'],int) and entry['rank']>0,'Rank must be a positive integer'
+ import datetime,re
+ datetime.date.fromisoformat(entry['checked'])
+ assert entry['checked']<=today,'Standings date cannot be in the future'
+ assert re.fullmatch(r'\d+-\d+(?:-\d+)?',entry['record']),'Record must be W-L or W-L-T'
+ assert entry['sourceUrl'].startswith('https://www.mpa.cc/'),'Official MPA source required'
+ assert entry['classification'] and entry['region'],'Class and region required'
+ matches=[x for x in summary if (x['team'],x['sport'])==key]
+ assert len(matches)==1 and entry['team']!='Gould Academy','Unknown MPA team/sport'
+ matches[0].update(entry,status='Verified MPA snapshot')
 data=dict(meta=meta,schedule=rows,teams=teams,athletes=[],realignments=b['realignments'],standings=dict(lastUpdated=today+' — official rankings pending verification',rows=summary,football=[],note='The September preseason predictions have been removed. Official ranks, full-season records and playoff eligibility are withheld until verified against the current MPA standings. Football has separate seeding rules. Listed scores are reported results; missing scores are not losses.'),updateLog=[dict(week='October refresh',date=today,summary=f"Refreshed {len(rows)} source-linked games and reported results for WMR coverage schools. Duplicate scheduled/result rows reconciled. Missing results and source conflicts flagged. Official rankings remain pending.")],sources=[dict(name='Local school schedules and reported results',url='https://www.downtownme.com/sports/sports.asp',use='September–October listings checked October 10; dates/times may need school confirmation.'),dict(name='niftiIQ football schedules',url='https://niftiiq.com/maine/football/',use='Independent football schedule/result listings, checked October 10. Not official MPA rankings.'),dict(name='Varsity Maine daily scores',url=vm,use='October 9 football results.'),dict(name='Gould Academy athletics',url='https://www.gouldacademy.org/athletics',use='Prep-school schedules; Gould does not share the public-school MPA ranking structure.'),dict(name='Hyde School boys soccer',url='https://www.hyde.edu/athletics/our-teams/boys-varsity-soccer',use='October 7 Gould result.'),dict(name='MPA official standings',url='https://www.mpa.cc/TournamentCentralRankings.aspx',use='Official ranks and tournament seeds; automated retrieval was blocked.'),dict(name='MPA 2026 soccer bulletin',url='https://www.mpa.cc/resources/Tournament%20Info/Soccer%20Boys/Bulletin%202026-27.pdf',use='Current soccer playoff rules and dates.')])
 (R/'js/data.js').write_text('/* Reviewed sports snapshot; see linked sources and verification notes. */\nwindow.WM_DATA = '+json.dumps(data,indent=2,ensure_ascii=False)+';\n')
 print(len(rows),'rows;',sum(x['completed'] for x in rows),'reported scores;',len(summary),'team/sport entries')

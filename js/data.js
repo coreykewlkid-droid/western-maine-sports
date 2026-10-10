@@ -8178,7 +8178,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 9, 2026: Bonny Eagle 45–6 Oxford Hills/Buckfield",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Buckfield",
@@ -8188,7 +8191,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 8, 2026: Richmond 4–1 Buckfield",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "D",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Buckfield",
@@ -8198,7 +8204,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 5, 2026: Buckfield 3–0 Vinalhaven/North Haven",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "8 Person",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Dirigo",
@@ -8208,7 +8217,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 9, 2026: Winthrop 19–6 Dirigo",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Dirigo",
@@ -8218,7 +8230,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 6, 2026: Telstar 7–0 Dirigo",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "8 Person",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Dirigo",
@@ -8228,7 +8243,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 7, 2026: Dirigo 2–1 Madison",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2
+        "pending": 2,
+        "classification": "8 Person",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Dirigo",
@@ -8238,7 +8256,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 7, 2026: Mountain Valley 8–1 Dirigo",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Fryeburg Academy",
@@ -8248,7 +8269,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 9, 2026: Kennebunk 35–34 Fryeburg Academy",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Fryeburg Academy",
@@ -8258,7 +8282,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 8, 2026: Fryeburg Academy 9–1 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Fryeburg Academy",
@@ -8268,7 +8295,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 1, 2026: Freeport 5–1 Fryeburg Academy",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Fryeburg Academy",
@@ -8278,7 +8308,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 8, 2026: Fryeburg Academy 1–0 York",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 3
+        "pending": 3,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Mountain Valley",
@@ -8288,7 +8321,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 2, 2026: Mountain Valley 20–0 Belfast",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Mountain Valley",
@@ -8298,7 +8334,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 7, 2026: Lisbon 3–0 Mountain Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2
+        "pending": 2,
+        "classification": "C",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Mountain Valley",
@@ -8308,7 +8347,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 8, 2026: Richmond 8–0 Mountain Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "8 Person",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Mountain Valley",
@@ -8318,7 +8360,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 7, 2026: Mountain Valley 8–1 Dirigo",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2
+        "pending": 2,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Oxford Hills",
@@ -8328,7 +8373,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 9, 2026: Bonny Eagle 45–6 Oxford Hills/Buckfield",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Oxford Hills",
@@ -8338,7 +8386,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 6, 2026: Messalonskee 4–1 Oxford Hills",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2
+        "pending": 2,
+        "classification": "A",
+        "region": "North",
+        "checked": "2026-10-10"
       },
       {
         "team": "Oxford Hills",
@@ -8348,7 +8399,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 6, 2026: Messalonskee 3–1 Oxford Hills",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2
+        "pending": 2,
+        "classification": "A",
+        "region": "North",
+        "checked": "2026-10-10"
       },
       {
         "team": "Oxford Hills",
@@ -8358,7 +8412,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 7, 2026: Mt. Ararat 2–0 Oxford Hills",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Poland Regional",
@@ -8368,7 +8425,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 8, 2026: Morse 40–6 Poland Regional",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Poland Regional",
@@ -8378,7 +8438,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 7, 2026: Greely 5–0 Poland Regional",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Poland Regional",
@@ -8388,7 +8451,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 7, 2026: Poland Regional 2–2 Greely",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Poland Regional",
@@ -8398,7 +8464,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 6, 2026: Poland Regional 2–0 Lake Region",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Sacopee Valley",
@@ -8408,7 +8477,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 9, 2026: Telstar 70–24 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Sacopee Valley",
@@ -8418,7 +8490,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 8, 2026: Fryeburg Academy 9–1 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2
+        "pending": 2,
+        "classification": "C",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Sacopee Valley",
@@ -8428,7 +8503,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 3, 2026: Traip Academy 3–0 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2
+        "pending": 2,
+        "classification": "C",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Sacopee Valley",
@@ -8438,7 +8516,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 7, 2026: Wells 1–0 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 5
+        "pending": 5,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Telstar",
@@ -8448,7 +8529,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 9, 2026: Telstar 70–24 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Telstar",
@@ -8458,7 +8542,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 8, 2026: Telstar 10–2 Islesboro",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "8 Person",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Telstar",
@@ -8468,7 +8555,10 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 6, 2026: Oak Hill 4–1 Telstar",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2
+        "pending": 2,
+        "classification": "D",
+        "region": "South",
+        "checked": "2026-10-10"
       },
       {
         "team": "Telstar",
@@ -8478,27 +8568,36 @@ window.WM_DATA = {
         "status": "Official ranking pending",
         "latest": "Oct 8, 2026: Hall-Dale/Monmouth 8–0 Telstar",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2
+        "pending": 2,
+        "classification": "Pending verification",
+        "region": "Pending verification",
+        "checked": "2026-10-10"
       },
       {
         "team": "Gould Academy",
         "sport": "Boys Soccer",
-        "rank": "—",
+        "rank": "N/A",
         "record": "Not verified",
-        "status": "Official ranking pending",
+        "status": "Separate prep-school standings",
         "latest": "Oct 7, 2026: Gould Academy 1–8 Hyde School",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1
+        "pending": 1,
+        "classification": "Prep school",
+        "region": "MAISAD / NEPSAC",
+        "checked": "2026-10-10"
       },
       {
         "team": "Gould Academy",
         "sport": "Girls Soccer",
-        "rank": "—",
+        "rank": "N/A",
         "record": "Not verified",
-        "status": "Official ranking pending",
+        "status": "Separate prep-school standings",
         "latest": "No verified result",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0
+        "pending": 0,
+        "classification": "Prep school",
+        "region": "MAISAD / NEPSAC",
+        "checked": "2026-10-10"
       }
     ],
     "football": [],

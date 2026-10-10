@@ -150,11 +150,17 @@
           <span class="hint" id="standUpdated">—</span>
         </div>
         <p class="section-intro">Official MPA rankings could not be retrieved during this refresh. The table shows the latest reported result for each covered team and sport. Rank and full-season record remain pending. <a href="https://www.mpa.cc/TournamentCentralRankings.aspx" target="_blank" rel="noopener">Open official MPA standings ↗</a></p>
+        <label for="standSport">Sport </label><select id="standSport"><option value="all">All sports</option><option>Football</option><option>Boys Soccer</option><option>Girls Soccer</option><option>Field Hockey</option></select>
+        <p class="section-intro">Conference standings and MPA tournament rankings serve different purposes. In soccer and field hockey, Heal points reflect results and the strength of defeated opponents. Tournament rankings determine qualification and seeding; teams then advance through regional playoffs to reach the state final. Football has separate qualifying and seeding rules. Gould competes in prep-school athletics.</p>
+        <p class="section-intro">2026 soccer: the regular season ends October 20, final Heal points are due October 22, and state finals are November 7. <a href="https://www.mpa.cc/resources/Tournament%20Info/Soccer%20Boys/Bulletin%202026-27.pdf" target="_blank" rel="noopener">MPA soccer bulletin ↗</a></p>
+        <label for="standBrief">Brief standings update for readers and listeners</label>
+        <textarea id="standBrief" rows="4" readonly style="width:100%;margin:8px 0" aria-label="Standings update"></textarea>
+        <button class="btn" id="copyStandBrief" type="button">Copy update</button><span id="standCopyStatus" role="status"></span>
         <div class="table-wrap" style="overflow-x:auto">
           <table class="stand-table" id="standTable">
             <thead>
               <tr>
-                <th>Team</th><th>Sport</th><th>Official rank</th><th>Season record</th><th>Verification</th><th>Latest reported result</th>
+                <th>Team</th><th>Sport</th><th>Class / region</th><th>Official rank</th><th>Season record</th><th>As of</th><th>Verification</th><th>Latest reported result</th>
               </tr>
             </thead>
             <tbody id="standBody"></tbody>
