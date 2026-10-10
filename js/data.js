@@ -8168,7 +8168,7 @@ window.WM_DATA = {
     }
   },
   "standings": {
-    "lastUpdated": "2026-10-10 — 8 verified standings; others pending",
+    "lastUpdated": "2026-10-10 — 11 verified standings; others pending",
     "rows": [
       {
         "team": "Buckfield",
@@ -8294,15 +8294,17 @@ window.WM_DATA = {
       {
         "team": "Fryeburg Academy",
         "sport": "Girls Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 8,
+        "record": "4-7-1",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 1, 2026: Freeport 5–1 Fryeburg Academy",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 1,
         "classification": "B",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 25.128
       },
       {
         "team": "Fryeburg Academy",
@@ -8460,15 +8462,17 @@ window.WM_DATA = {
       {
         "team": "Poland Regional",
         "sport": "Girls Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 3,
+        "record": "8-1-2",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 7, 2026: Poland Regional 2–2 Greely",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 1,
         "classification": "B",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 72.168
       },
       {
         "team": "Poland Regional",
@@ -8614,6 +8618,21 @@ window.WM_DATA = {
         "classification": "Prep school",
         "region": "MAISAD / NEPSAC",
         "checked": "2026-10-10"
+      },
+      {
+        "team": "Massabesic/Sacopee Coop",
+        "sport": "Girls Volleyball",
+        "latest": "No verified result",
+        "pending": 0,
+        "classification": "A",
+        "region": "Statewide",
+        "rank": 12,
+        "record": "5-7-0",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 45.612,
+        "status": "Verified MPA snapshot"
       }
     ],
     "football": [],

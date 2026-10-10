@@ -94,5 +94,41 @@
     "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
     "sourceNote": "MPA 2026-27 Class South-B boys soccer table copied October 10; page update timestamp not supplied.",
     "tournamentIndex": 41.939
+  },
+  {
+    "team": "Poland Regional",
+    "sport": "Girls Soccer",
+    "classification": "B",
+    "region": "South",
+    "rank": 3,
+    "record": "8-1-2",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
+    "tournamentIndex": 72.168
+  },
+  {
+    "team": "Fryeburg Academy",
+    "sport": "Girls Soccer",
+    "classification": "B",
+    "region": "South",
+    "rank": 8,
+    "record": "4-7-1",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
+    "tournamentIndex": 25.128
+  },
+  {
+    "team": "Massabesic/Sacopee Coop",
+    "sport": "Girls Volleyball",
+    "classification": "A",
+    "region": "Statewide",
+    "rank": 12,
+    "record": "5-7-0",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
+    "tournamentIndex": 45.612
   }
 ]
