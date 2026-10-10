@@ -8168,7 +8168,7 @@ window.WM_DATA = {
     }
   },
   "standings": {
-    "lastUpdated": "2026-10-10 — 14 verified standings; others pending",
+    "lastUpdated": "2026-10-10 — 16 verified standings; others pending",
     "rows": [
       {
         "team": "Buckfield",
@@ -8498,15 +8498,17 @@ window.WM_DATA = {
       {
         "team": "Sacopee Valley",
         "sport": "Football",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 5,
+        "record": "1-5",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 9, 2026: Telstar 70–24 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "8 Man Small",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA South-8 Man Small football table supplied in Pasted markdown(20261010-223921).md; captured October 10. Page update timestamp not supplied.",
+        "crabtreeIndex": 77.273
       },
       {
         "team": "Sacopee Valley",
@@ -8550,15 +8552,17 @@ window.WM_DATA = {
       {
         "team": "Telstar",
         "sport": "Football",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 3,
+        "record": "3-3",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 9, 2026: Telstar 70–24 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "8 Man Small",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA South-8 Man Small football table supplied in Pasted markdown(20261010-223921).md; captured October 10. Page update timestamp not supplied.",
+        "crabtreeIndex": 104.286
       },
       {
         "team": "Telstar",

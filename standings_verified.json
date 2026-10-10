@@ -166,5 +166,29 @@
     "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
     "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
     "crabtreeIndex": 66.667
+  },
+  {
+    "team": "Telstar",
+    "sport": "Football",
+    "classification": "8 Man Small",
+    "region": "South",
+    "rank": 3,
+    "record": "3-3",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA South-8 Man Small football table supplied in Pasted markdown(20261010-223921).md; captured October 10. Page update timestamp not supplied.",
+    "crabtreeIndex": 104.286
+  },
+  {
+    "team": "Sacopee Valley",
+    "sport": "Football",
+    "classification": "8 Man Small",
+    "region": "South",
+    "rank": 5,
+    "record": "1-5",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA South-8 Man Small football table supplied in Pasted markdown(20261010-223921).md; captured October 10. Page update timestamp not supplied.",
+    "crabtreeIndex": 77.273
   }
 ]
