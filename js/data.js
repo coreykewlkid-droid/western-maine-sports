@@ -8168,7 +8168,7 @@ window.WM_DATA = {
     }
   },
   "standings": {
-    "lastUpdated": "2026-10-10 — 4 verified standings; others pending",
+    "lastUpdated": "2026-10-10 — 6 verified standings; others pending",
     "rows": [
       {
         "team": "Buckfield",
@@ -8305,15 +8305,17 @@ window.WM_DATA = {
       {
         "team": "Fryeburg Academy",
         "sport": "Field Hockey",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 8,
+        "record": "2-8-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 8, 2026: Fryeburg Academy 1–0 York",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 3,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA 2026-27 Class South-B field hockey table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 8.673
       },
       {
         "team": "Mountain Valley",
@@ -8467,15 +8469,17 @@ window.WM_DATA = {
       {
         "team": "Poland Regional",
         "sport": "Field Hockey",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 5,
+        "record": "3-8-1",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 6, 2026: Poland Regional 2–0 Lake Region",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 1,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA 2026-27 Class South-B field hockey table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 22.423
       },
       {
         "team": "Sacopee Valley",

@@ -46,5 +46,29 @@
     "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
     "sourceNote": "MPA table supplied in class-b-standings.odt; captured October 10. Page update timestamp not supplied.",
     "crabtreeIndex": 94.444
+  },
+  {
+    "team": "Poland Regional",
+    "sport": "Field Hockey",
+    "classification": "B",
+    "region": "South",
+    "rank": 5,
+    "record": "3-8-1",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 Class South-B field hockey table copied October 10; page update timestamp not supplied.",
+    "tournamentIndex": 22.423
+  },
+  {
+    "team": "Fryeburg Academy",
+    "sport": "Field Hockey",
+    "classification": "B",
+    "region": "South",
+    "rank": 8,
+    "record": "2-8-0",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA 2026-27 Class South-B field hockey table copied October 10; page update timestamp not supplied.",
+    "tournamentIndex": 8.673
   }
 ]
