@@ -8168,7 +8168,7 @@ window.WM_DATA = {
     }
   },
   "standings": {
-    "lastUpdated": "2026-10-10 — 3 verified standings; others pending",
+    "lastUpdated": "2026-10-10 — 4 verified standings; others pending",
     "rows": [
       {
         "team": "Buckfield",
@@ -8264,15 +8264,17 @@ window.WM_DATA = {
       {
         "team": "Fryeburg Academy",
         "sport": "Football",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 5,
+        "record": "2-4",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 9, 2026: Kennebunk 35–34 Fryeburg Academy",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 1,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "B",
+        "region": "North",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA table supplied in class-b-standings.odt; captured October 10. Page update timestamp not supplied.",
+        "crabtreeIndex": 94.444
       },
       {
         "team": "Fryeburg Academy",
@@ -8607,7 +8609,7 @@ window.WM_DATA = {
       }
     ],
     "football": [],
-    "note": "Oxford Hills standings are from MPA tables supplied October 10; the page update timestamp was not included. Other official rankings remain pending. Qualifying/non-qualifying labels during the season are provisional, not final playoff decisions. Football has separate seeding rules. Missing scores are not losses."
+    "note": "Verified standings are from MPA Class A and Class B tables supplied October 10; the page update timestamp was not included. Other official rankings remain pending. Qualifying/non-qualifying labels during the season are provisional, not final playoff decisions. Football has separate seeding rules. Missing scores are not losses."
   },
   "updateLog": [
     {

@@ -34,5 +34,17 @@
     "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
     "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
     "tournamentIndex": 2.041
+  },
+  {
+    "team": "Fryeburg Academy",
+    "sport": "Football",
+    "classification": "B",
+    "region": "North",
+    "rank": 5,
+    "record": "2-4",
+    "checked": "2026-10-10",
+    "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+    "sourceNote": "MPA table supplied in class-b-standings.odt; captured October 10. Page update timestamp not supplied.",
+    "crabtreeIndex": 94.444
   }
 ]
