@@ -12,7 +12,7 @@ window.WM_DATA = {
     },
     "coverage": "Mountain Valley · Dirigo · Telstar · Buckfield · Oxford Hills · Gould Academy · Fryeburg Academy · Sacopee Valley · Poland Regional",
     "checked": "2026-10-10",
-    "coverageNote": "Schedules and reported scores checked October 10. Missing results remain pending; source listings may be incomplete. Cross country and volleyball need a fresh source check. Official MPA rankings could not be retrieved. This is a reviewed snapshot, not a live feed."
+    "coverageNote": "Schedules and reported scores checked October 10. Missing results remain pending; source listings may be incomplete. Cross country and volleyball need a fresh source check. MPA standings supplied October 10 have been entered. This is a reviewed snapshot, not a live feed."
   },
   "schedule": [
     {
@@ -8168,46 +8168,53 @@ window.WM_DATA = {
     }
   },
   "standings": {
-    "lastUpdated": "2026-10-10 — 16 verified standings; others pending",
+    "lastUpdated": "2026-10-10 — 32 verified school/sport entries",
     "rows": [
       {
         "team": "Buckfield",
         "sport": "Football",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 1,
+        "record": "4-1",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 9, 2026: Bonny Eagle 45–6 Oxford Hills/Buckfield",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "A",
+        "region": "North",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied. MPA supplied record is 4-1; reported-score listings differ and require reconciliation.",
+        "crabtreeIndex": 122.857,
+        "standingTeam": "Oxford Hills/Buckfield Coop"
       },
       {
         "team": "Buckfield",
         "sport": "Boys Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 3,
+        "record": "5-5-2",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 8, 2026: Richmond 4–1 Buckfield",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
         "classification": "D",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 40.612
       },
       {
         "team": "Buckfield",
         "sport": "Girls Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 4,
+        "record": "9-2-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 5, 2026: Buckfield 3–0 Vinalhaven/North Haven",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 1,
         "classification": "8 Person",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 70.454
       },
       {
         "team": "Dirigo",
@@ -8227,41 +8234,47 @@ window.WM_DATA = {
       {
         "team": "Dirigo",
         "sport": "Boys Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 11,
+        "record": "2-9-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 6, 2026: Telstar 7–0 Dirigo",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
         "classification": "8 Person",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 7.483
       },
       {
         "team": "Dirigo",
         "sport": "Girls Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 6,
+        "record": "7-5-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 7, 2026: Dirigo 2–1 Madison",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 2,
         "classification": "8 Person",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 39.434
       },
       {
         "team": "Dirigo",
         "sport": "Field Hockey",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 9,
+        "record": "2-10-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 7, 2026: Mountain Valley 8–1 Dirigo",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 1,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "C",
+        "region": "North",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 7.347
       },
       {
         "team": "Fryeburg Academy",
@@ -8341,54 +8354,63 @@ window.WM_DATA = {
       {
         "team": "Mountain Valley",
         "sport": "Boys Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 7,
+        "record": "5-4-2",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 7, 2026: Lisbon 3–0 Mountain Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 2,
         "classification": "C",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 44.949
       },
       {
         "team": "Mountain Valley",
         "sport": "Girls Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 7,
+        "record": "4-6-1",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 8, 2026: Richmond 8–0 Mountain Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 1,
         "classification": "8 Person",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 16.821
       },
       {
         "team": "Mountain Valley",
         "sport": "Field Hockey",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 4,
+        "record": "7-3-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 7, 2026: Mountain Valley 8–1 Dirigo",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 2,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "C",
+        "region": "North",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 40.0
       },
       {
         "team": "Oxford Hills",
         "sport": "Football",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 1,
+        "record": "4-1",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 9, 2026: Bonny Eagle 45–6 Oxford Hills/Buckfield",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "A",
+        "region": "North",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied. MPA supplied record is 4-1; reported-score listings differ and require reconciliation.",
+        "crabtreeIndex": 122.857,
+        "standingTeam": "Oxford Hills/Buckfield Coop"
       },
       {
         "team": "Oxford Hills",
@@ -8513,41 +8535,47 @@ window.WM_DATA = {
       {
         "team": "Sacopee Valley",
         "sport": "Boys Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 12,
+        "record": "2-7-1",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 8, 2026: Fryeburg Academy 9–1 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 2,
         "classification": "C",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 17.092
       },
       {
         "team": "Sacopee Valley",
         "sport": "Girls Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 12,
+        "record": "0-11-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 3, 2026: Traip Academy 3–0 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 2,
         "classification": "C",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 0.0
       },
       {
         "team": "Sacopee Valley",
         "sport": "Field Hockey",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 9,
+        "record": "3-8-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 7, 2026: Wells 1–0 Sacopee Valley",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 5,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "C",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 3.265
       },
       {
         "team": "Telstar",
@@ -8567,41 +8595,47 @@ window.WM_DATA = {
       {
         "team": "Telstar",
         "sport": "Boys Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 2,
+        "record": "10-0-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 8, 2026: Telstar 10–2 Islesboro",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
         "classification": "8 Person",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 62.993
       },
       {
         "team": "Telstar",
         "sport": "Girls Soccer",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 3,
+        "record": "5-6-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 6, 2026: Oak Hill 4–1 Telstar",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 2,
         "classification": "D",
         "region": "South",
-        "checked": "2026-10-10"
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 11.837
       },
       {
         "team": "Telstar",
         "sport": "Field Hockey",
-        "rank": "—",
-        "record": "Not verified",
-        "status": "Official ranking pending",
+        "rank": 10,
+        "record": "1-10-0",
+        "status": "Verified MPA snapshot",
         "latest": "Oct 8, 2026: Hall-Dale/Monmouth 8–0 Telstar",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 2,
-        "classification": "Pending verification",
-        "region": "Pending verification",
-        "checked": "2026-10-10"
+        "classification": "C",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 0.714
       },
       {
         "team": "Gould Academy",
@@ -8646,7 +8680,7 @@ window.WM_DATA = {
       }
     ],
     "football": [],
-    "note": "Verified standings are from MPA Class A and Class B tables supplied October 10; the page update timestamp was not included. Other official rankings remain pending. Qualifying/non-qualifying labels during the season are provisional, not final playoff decisions. Football has separate seeding rules. Missing scores are not losses."
+    "note": "Verified standings are from MPA tables supplied October 10; the page update timestamp was not included. All listed MPA standings have been entered; Gould has separate prep-school standings. Qualifying/non-qualifying labels during the season are provisional, not final playoff decisions. Football has separate seeding rules. Missing scores are not losses."
   },
   "updateLog": [
     {
