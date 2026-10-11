@@ -89,7 +89,7 @@
         <p class="section-intro">Choose upcoming games, reported finals, or games with a missing result. Completed scores list the two teams without implying home or away. Dates and start times follow the linked source; confirm changes with the school.</p><div class="warn-note" id="coverageNote"></div>
 
         <div class="toolbar" id="schedToolbar">
-          <div class="chip-group" id="sportChips"></div><select class="select" id="resultFilter" aria-label="Game status"><option value="upcoming">Upcoming games</option><option value="completed">Reported finals</option><option value="pending">Missing results</option><option value="all">All entries</option></select>
+          <div class="chip-group" id="sportChips"></div><select class="select" id="resultFilter" aria-label="Game status"><option value="upcoming">Upcoming games</option><option value="completed">Confirmed finals</option><option value="pending">Missing / unverified results</option><option value="all">All entries</option></select>
           <div class="search">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
             <input type="search" id="teamSearch" placeholder="Search team or town…" aria-label="Search teams">
@@ -97,8 +97,8 @@
           <select class="select" id="sortSelect" aria-label="Sort by">
             <option value="date">Sort: Date</option>
             <option value="sport">Sort: Sport</option>
-            <option value="home">Sort: Home team</option>
-            <option value="away">Sort: Away team</option>
+            <option value="home">Sort: Opponent</option>
+            <option value="away">Sort: Team</option>
           </select>
           <label class="select" style="display:flex;align-items:center;gap:6px;cursor:pointer">
             <input type="checkbox" id="westOnly" style="width:auto"> Western ME only
@@ -149,18 +149,18 @@
           <h2>Standings &amp; Playoff Tracker</h2>
           <span class="hint" id="standUpdated">—</span>
         </div>
-        <p class="section-intro">Verified rankings and records were added from MPA tables supplied October 10. All listed MPA team standings are now filled. Gould follows separate prep-school standings. Dates indicate when the standings were captured; the source page update timestamp was not supplied. <a href="https://www.mpa.cc/TournamentCentralRankings.aspx" target="_blank" rel="noopener">Open official MPA standings ↗</a></p>
-        <label for="standSport">Sport </label><select id="standSport"><option value="all">All sports</option><option>Football</option><option>Boys Soccer</option><option>Girls Soccer</option><option>Field Hockey</option><option>Girls Volleyball</option></select>
+        <p class="section-intro">Official MPA ranks and season records below are historical snapshots captured October 10, 2026. They are not live rankings or confirmed playoff seeds. Gould follows separate prep-school standings. The source page update timestamp was not supplied. Rank links open the current official MPA page, which may have changed. <a href="https://www.mpa.cc/TournamentCentralRankings.aspx" target="_blank" rel="noopener">Open official MPA standings ↗</a></p>
+        <div class="toolbar"><label for="standSport">Sport </label><select class="select" id="standSport"><option value="all">All sports</option><option>Football</option><option>Boys Soccer</option><option>Girls Soccer</option><option>Field Hockey</option><option>Girls Volleyball</option></select><label for="standSchool">School </label><select class="select" id="standSchool"><option value="all">All coverage schools</option></select></div>
         <p class="section-intro">Conference standings and MPA tournament rankings serve different purposes. In soccer and field hockey, Heal points reflect results and the strength of defeated opponents. Tournament rankings determine qualification and seeding; teams then advance through regional playoffs to reach the state final. Football has separate qualifying and seeding rules. Gould competes in prep-school athletics.</p>
         <p class="section-intro">2026 soccer: the regular season ends October 20, final Heal points are due October 22, and state finals are November 7. <a href="https://www.mpa.cc/resources/Tournament%20Info/Soccer%20Boys/Bulletin%202026-27.pdf" target="_blank" rel="noopener">MPA soccer bulletin ↗</a></p>
         <label for="standBrief">Brief standings update for readers and listeners</label>
         <textarea id="standBrief" rows="4" readonly style="width:100%;margin:8px 0" aria-label="Standings update"></textarea>
-        <button class="btn" id="copyStandBrief" type="button">Copy update</button><span id="standCopyStatus" role="status"></span>
+        <button class="btn" id="copyStandBrief" type="button">Copy update</button><span id="standCopyStatus" role="status" aria-live="polite"></span>
         <div class="table-wrap" style="overflow-x:auto">
           <table class="stand-table" id="standTable">
             <thead>
               <tr>
-                <th>Team</th><th>Sport</th><th>Class / region</th><th>Official rank</th><th>Season record</th><th>Captured</th><th>Verification</th><th>Latest reported result</th>
+                <th>Team</th><th>Sport</th><th>Class / region</th><th>Official rank</th><th>Season record</th><th>Captured</th><th>Verification</th><th>Playoff status / seed</th><th>Latest confirmed result</th>
               </tr>
             </thead>
             <tbody id="standBody"></tbody>
@@ -175,16 +175,41 @@
           <h2>Weekly Update Center</h2>
           <span class="hint">Manual · source-verified workflow</span>
         </div>
-        <p class="section-intro">A repeatable weekly workflow to keep standings, schedules, and playoff status current through November. The log here is an in-session scratchpad (clears on reload) — for a durable record, edit <code>js/data.js</code> and redeploy, or export the log as JSON below.</p>
+        <p class="section-intro">Generate the weekly score report for Phil and the narration for Scot from reviewed finals. Check the linked sources before updating the published snapshot. The update log is an in-session scratchpad; download its JSON to keep your notes.</p>
+        <div class="update-card report-card" id="weeklyReport">
+          <h3>Weekly Sports Report Generator</h3>
+          <p class="section-intro">Choose an inclusive date range. Games appear once, in date order and grouped by sport. Missing or disputed finals, exhibitions and unreviewed results are excluded. Routine reports contain team results only, with no athlete names.</p>
+          <form id="reportForm" class="report-controls">
+            <div class="field-row"><label for="reportStart">Start date</label><input id="reportStart" type="date" required></div>
+            <div class="field-row"><label for="reportEnd">End date</label><input id="reportEnd" type="date" required></div>
+            <div class="field-row"><label for="reportSport">Sport</label><select class="select" id="reportSport"><option value="all">All sports</option></select></div>
+            <div class="field-row"><label for="reportSchool">School</label><select class="select" id="reportSchool"><option value="all">All coverage schools</option></select></div>
+            <button class="btn" type="submit">Generate reports</button>
+          </form>
+          <p id="reportStatus" class="update-note" role="status" aria-live="polite"></p>
+          <div class="update-grid report-output">
+            <div>
+              <div class="field-row"><label for="reportWritten">Written report for Phil</label><textarea id="reportWritten" rows="14" readonly placeholder="Confirmed results will appear here."></textarea></div>
+              <button class="btn" id="copyReportWritten" type="button" disabled>Copy written report</button><span id="writtenCopyStatus" role="status" aria-live="polite"></span>
+            </div>
+            <div>
+              <div class="field-row"><label for="reportNarration">Spoken narration for Scot</label><textarea id="reportNarration" rows="14" readonly placeholder="The narration will appear here."></textarea></div>
+              <button class="btn" id="copyReportNarration" type="button" disabled>Copy narration</button><span id="narrationCopyStatus" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+          <details class="report-review"><summary id="reportSourcesSummary">Sources for included finals</summary><div id="reportSources"></div></details>
+          <details class="report-review"><summary id="reportOmittedSummary">Omitted games needing review</summary><div id="reportOmitted"></div></details>
+          <p class="update-note">Cross-country meet results need separate team verification. The default dates cover the last seven days of the published snapshot; a newer date range does not fetch new scores.</p>
+        </div>
         <div class="update-grid">
           <div class="update-card">
             <h3>Weekly Workflow</h3>
             <ol class="steps">
               <li><b>Check MPA standings.</b> Open the MPA sport pages (football seeding, soccer, field hockey and volleyball; check XC meet qualification separately) and copy the latest standings.</li>
-              <li><b>Update results.</b> Fill in wins/losses from the past week's games using downtownme.com, MaxPreps, and school athletics pages.</li>
+              <li><b>Review results.</b> Check school athletics pages, MPA results and trustworthy score reports. Confirm dates, scores and duplicate entries. Keep disagreements pending until resolved.</li>
               <li><b>Re-tag playoff status.</b> Record a dated official rank within its sport, class and region. Label current playoff position separately from a clinched berth.</li>
               <li><b>Note key matchups.</b> Add the next week's biggest games for the nine coverage schools.</li>
-              <li><b>Log the update.</b> Add a dated entry to the update log below, then redeploy.</li>
+              <li><b>Approve and publish.</b> Review the candidate file, update the reviewed data and dated standings, then run the validation and publisher. Newly fetched results remain unpublished until reviewed.</li>
             </ol>
             <div class="update-note">Sources to check each week: <a href="https://www.mpa.cc" target="_blank" rel="noopener">mpa.cc</a> · <a href="https://www.downtownme.com/sports/sports.asp" target="_blank" rel="noopener">downtownme.com</a> · <a href="https://www.maxpreps.com/me/football/" target="_blank" rel="noopener">MaxPreps</a> · school athletics pages.</div>
           </div>
@@ -201,6 +226,8 @@
             <button class="btn" id="addLogBtn">Add to update log</button>
             <button class="btn secondary" id="copyDataBtn" style="margin-left:8px">Copy data template</button>
             <button class="btn secondary" id="downloadLogBtn" style="margin-left:8px">Download log (JSON)</button>
+            <span id="templateCopyStatus" role="status" aria-live="polite"></span>
+            <textarea id="dataTemplate" readonly aria-label="Standings data template" hidden></textarea>
             <div id="logList" style="margin-top:var(--space-4)"></div>
           </div>
         </div>
@@ -220,6 +247,8 @@
 </div>
 
 <script src="js/data.js"></script>
+<script src="js/report.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
+
