@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Reproduce the reviewed dashboard offline. No fetching or automatic score approval."""
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -111,9 +112,21 @@ def build_data(root=ROOT):
             dict(name='MPA 2026 soccer bulletin', url='https://www.mpa.cc/resources/Tournament%20Info/Soccer%20Boys/Bulletin%202026-27.pdf', use='Official 2026 rules, classifications and tournament dates; latest checked October 11.'),
         ])
 
+def version_asset_links(root=ROOT):
+    """Keep a fresh page from mixing cached scripts with newly reviewed data."""
+    page = root / 'index.html'
+    html = page.read_text()
+    for asset in ('css/style.css', 'js/data.js', 'js/report.js', 'js/app.js'):
+        version = hashlib.sha256((root / asset).read_bytes()).hexdigest()[:12]
+        pattern = r'((?:src|href)=")' + re.escape(asset) + r'(?:\?v=[a-f0-9]+)?(")'
+        html, count = re.subn(pattern, lambda m: m[1] + asset + '?v=' + version + m[2], html)
+        require(count == 1, f'Expected one page reference for {asset}')
+    page.write_text(html)
+
 def main():
     data = build_data()
     (ROOT / 'js/data.js').write_text('/* Reviewed sports snapshot; see linked sources and verification notes. */\nwindow.WM_DATA = ' + json.dumps(data, indent=2, ensure_ascii=False) + ';\n')
+    version_asset_links()
     print(len(data['schedule']), 'entries;', sum(verified_final(g, data['meta']['reviewedOn']) for g in data['schedule']), 'confirmed finals; MPA capture', data['standings']['lastUpdated'])
 
 if __name__ == '__main__':

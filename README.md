@@ -62,6 +62,8 @@ Before moving a candidate into **`verified_schedule.json`**:
 
 Run `publish_data.py` after review. It rebuilds `js/data.js` **offline** from the reviewed schedule, standings and classification archive, validating coverage, duplicate games, sources, dates, score approvals, ranks and records. It does not scrape sources, infer records, replace disagreements or require private cached pages. Commit the reviewed inputs and generated data together.
 
+The publisher also versions local script and stylesheet links in `index.html` by their contents, so a newly deployed page does not mix cached scripts with newer data. Run it after changing those assets, and commit the updated page with them.
+
 The older `generate_data.py` now writes an unpublished historical candidate instead of overwriting the dashboard. `build_xc.py`, `js/xc_meets.json` and `teams_watched.txt` are historical resources and are not used by the current dashboard. Their broader scope and dates need review before reuse.
 
 The update-log form is an in-session scratchpad. Download its JSON to retain notes; logging or copying a template does not change the published data.
