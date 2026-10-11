@@ -305,7 +305,7 @@
   const main=$('.main');
   function syncNav(){
     const innerScroll=main.scrollHeight>main.clientHeight+1;
-    const top=innerScroll?main.getBoundingClientRect().top+100:Math.max($('.topbar').getBoundingClientRect().bottom,$('.sidebar').getBoundingClientRect().bottom)+24;
+    const top=innerScroll?main.getBoundingClientRect().top+100:Math.max(0,$('.topbar').getBoundingClientRect().bottom,$('.sidebar').getBoundingClientRect().bottom)+24;
     const scroll=innerScroll?main:document.scrollingElement;
     const atEnd=scroll.scrollTop+scroll.clientHeight>=scroll.scrollHeight-2;
     const current=atEnd?sections[sections.length-1]:[...sections].reverse().find(s=>s.getBoundingClientRect().top<=top)||sections[0];

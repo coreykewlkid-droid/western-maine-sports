@@ -122,6 +122,12 @@ def version_asset_links(root=ROOT):
         html, count = re.subn(pattern, lambda m: m[1] + asset + '?v=' + version + m[2], html)
         require(count == 1, f'Expected one page reference for {asset}')
     page.write_text(html)
+    layout_check = root / 'tests/responsive.html'
+    if layout_check.exists():
+        revision = hashlib.sha256(html.encode('utf-8')).hexdigest()[:12]
+        check_html, count = re.subn(r'src="\.\./(?:\?v=[a-f0-9]+)?#update"', 'src="../?v=' + revision + '#update"', layout_check.read_text())
+        require(count == 3, 'Expected three responsive dashboard frames')
+        layout_check.write_text(check_html)
 
 def main():
     data = build_data()
