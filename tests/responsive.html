@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard responsive layout checks</title>
+<style>
+  body{font:16px system-ui,sans-serif;margin:24px;color:#1b3025;background:#f4f5f1}
+  h1{font-size:24px}p{max-width:75ch}a{color:#215d3b}
+  .views{display:flex;align-items:flex-start;gap:24px;overflow-x:auto;padding-bottom:20px}
+  .view{flex:none}h2{font-size:18px}
+  iframe{display:block;height:780px;border:1px solid #bfc9c1;background:white}
+</style>
+</head>
+<body>
+<h1>Dashboard responsive layout checks</h1>
+<p>These frames load the published dashboard itself at phone, tablet and desktop viewport widths. Check navigation, filters, report controls and table scrolling inside each frame. <a href="../#update">Open the dashboard</a>.</p>
+<div class="views">
+  <section class="view"><h2>Phone — 375 px</h2><iframe id="phone" title="Dashboard at phone width" width="375" src="../#update"></iframe></section>
+  <section class="view"><h2>Tablet — 768 px</h2><iframe id="tablet" title="Dashboard at tablet width" width="768" src="../#update"></iframe></section>
+  <section class="view"><h2>Desktop — 1280 px</h2><iframe id="desktop" title="Dashboard at desktop width" width="1280" src="../#update"></iframe></section>
+</div>
+</body>
+</html>

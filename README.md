@@ -46,6 +46,8 @@ node --check js/app.js
 
 The tests cover publication consistency, source and date validation, standings preservation, local coverage, reversed duplicates, score conflicts, losses, ties, narration, name exclusion and confirmed playoff evidence. Synthetic test fixtures are never published.
 
+For a browser layout check, open `tests/responsive.html` through the same static server. It embeds the actual dashboard at 375, 768 and 1280 pixel viewport widths without altering the main page. Tables should scroll within their wrappers; report controls and text should fit their viewport.
+
 ## Fetch, verify, then publish
 
 `refresh_data.py` uses Python’s standard library to fetch local schedule listings. It writes **`schedule_candidates.json`**, never the reviewed publication file or `js/data.js`. Every fetched result is `verification: "pending"`. Score disagreements retain the competing reports and source URLs. Possible rescheduled duplicates and start-time differences are flagged. `--cached` can inspect the ignored `source_cache/` files.
