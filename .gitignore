@@ -1,2 +1,7 @@
 source_cache/
 __pycache__/
+schedule_candidates.json
+varsitymaine_schedule.json
+legacy_generated_candidate.js
+__pycache__/
+

@@ -10,9 +10,10 @@ window.WM_DATA = {
       "regularSeasonClose": "Oct 18-25, 2026 (sport-dependent)",
       "stateChampionships": "Late Oct – Nov 8, 2026"
     },
-    "coverage": "Mountain Valley · Dirigo · Telstar · Buckfield · Oxford Hills · Gould Academy · Fryeburg Academy · Sacopee Valley · Poland Regional",
+    "coverage": "Mountain Valley · Dirigo · Telstar · Buckfield · Oxford Hills Comprehensive · Gould Academy · Fryeburg Academy · Sacopee Valley · Poland Regional",
     "checked": "2026-10-10",
-    "coverageNote": "Schedules and reported scores checked October 10. Missing results remain pending; source listings may be incomplete. Cross country and volleyball need a fresh source check. MPA standings supplied October 10 have been entered. This is a reviewed snapshot, not a live feed."
+    "reviewedOn": "2026-10-11",
+    "coverageNote": "Schedules and results are from the 2026-10-10 source snapshot; integrity reviewed 2026-10-11. Finals retain their dated source review. Missing or disputed results are withheld from weekly reports. Cross country and volleyball game listings need a fresh source check. Each MPA rank retains its capture date and is not live."
   },
   "schedule": [
     {
@@ -36,7 +37,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Buckfield",
@@ -61,7 +63,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -86,7 +90,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mount Abram",
@@ -111,7 +117,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Pine Tree Academy",
@@ -136,7 +144,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Sacopee Valley",
@@ -161,7 +171,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Skowhegan",
@@ -186,7 +198,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -211,7 +225,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -236,7 +252,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Traip Academy",
@@ -261,7 +279,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Edward Little",
@@ -286,7 +306,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -309,7 +331,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Mountain Valley",
@@ -334,7 +357,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Spruce Mountain",
@@ -359,7 +384,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Traip Academy",
@@ -383,7 +410,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
       "checked": "2026-10-10",
-      "reviewNote": "Possible rescheduled duplicate; confirm with school."
+      "reviewNote": "Possible rescheduled duplicate; confirm with school.",
+      "verification": "pending"
     },
     {
       "away": "Cony",
@@ -408,7 +436,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -435,7 +465,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Morse",
@@ -460,7 +492,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oxford Hills/Buckfield",
@@ -477,7 +511,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Oxford Hills/Buckfield"
+        "Oxford Hills",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -485,7 +520,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=227"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -502,8 +539,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Buckfield",
-        "Mountain Valley"
+        "Mountain Valley",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -512,7 +549,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -537,7 +576,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -562,7 +603,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -587,7 +630,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lake Region",
@@ -612,7 +657,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Messalonskee",
@@ -637,7 +684,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -662,7 +711,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/sacopee-valley/"
       ],
       "awayScore": 48,
-      "homeScore": 0
+      "homeScore": 0,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -687,7 +738,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/telstar/"
       ],
       "awayScore": 30,
-      "homeScore": 18
+      "homeScore": 18,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Edward Little",
@@ -712,7 +765,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "North Yarmouth Academy",
@@ -737,7 +792,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Old Orchard Beach",
@@ -762,7 +819,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -787,7 +846,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Valley",
@@ -812,7 +873,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Valley",
@@ -835,7 +898,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Brunswick",
@@ -860,7 +924,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -887,7 +953,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Cape Elizabeth",
@@ -912,7 +980,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -937,7 +1007,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -962,7 +1034,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -987,7 +1061,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Spruce Mountain",
@@ -1012,7 +1088,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Waynflete",
@@ -1037,7 +1115,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Winthrop",
@@ -1062,7 +1142,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "York",
@@ -1087,7 +1169,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Brunswick",
@@ -1112,7 +1196,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -1137,7 +1223,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Cape Elizabeth",
@@ -1162,7 +1250,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -1187,7 +1277,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -1204,8 +1296,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Poland Regional",
-        "Sacopee Valley"
+        "Sacopee Valley",
+        "Poland Regional"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -1214,7 +1306,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -1239,7 +1333,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -1266,7 +1362,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oxford Hills",
@@ -1291,7 +1389,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -1308,8 +1408,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Buckfield",
-        "Dirigo"
+        "Dirigo",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -1318,7 +1418,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Bangor",
@@ -1343,7 +1445,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -1368,7 +1472,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Richmond",
@@ -1393,7 +1499,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Waynflete",
@@ -1418,7 +1526,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Freeport",
@@ -1443,7 +1553,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Wells",
@@ -1468,7 +1580,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Monmouth Academy",
@@ -1493,7 +1607,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -1518,7 +1634,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Leavitt",
@@ -1543,7 +1661,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -1560,8 +1680,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Dirigo",
-        "Mountain Valley"
+        "Mountain Valley",
+        "Dirigo"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -1570,7 +1690,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Waynflete",
@@ -1595,7 +1717,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lawrence",
@@ -1620,7 +1744,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mattanawcook Academy",
@@ -1645,7 +1771,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Morse",
@@ -1670,7 +1798,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -1695,7 +1825,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/mountain-valley/"
       ],
       "awayScore": 6,
-      "homeScore": 14
+      "homeScore": 14,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oxford Hills/Buckfield",
@@ -1712,7 +1844,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Oxford Hills/Buckfield"
+        "Oxford Hills",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -1720,7 +1853,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=227"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -1745,7 +1880,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -1770,7 +1907,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/sacopee-valley/"
       ],
       "awayScore": 20,
-      "homeScore": 47
+      "homeScore": 47,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Bangor",
@@ -1795,7 +1934,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -1819,7 +1960,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
       "checked": "2026-10-10",
-      "reviewNote": "Possible rescheduled duplicate; confirm with school."
+      "reviewNote": "Possible rescheduled duplicate; confirm with school.",
+      "verification": "pending"
     },
     {
       "away": "Telstar",
@@ -1836,8 +1978,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Sacopee Valley",
-        "Telstar"
+        "Telstar",
+        "Sacopee Valley"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -1846,7 +1988,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -1871,7 +2015,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -1896,7 +2042,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Sacopee Valley",
@@ -1921,7 +2069,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Vinalhaven/North Haven",
@@ -1946,7 +2096,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Boothbay Region",
@@ -1969,7 +2121,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Oxford Hills",
@@ -1994,7 +2147,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -2019,7 +2174,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Spruce Mountain",
@@ -2044,7 +2201,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -2069,7 +2228,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/telstar/"
       ],
       "awayScore": 0,
-      "homeScore": 60
+      "homeScore": 60,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -2094,7 +2255,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -2119,7 +2282,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -2144,7 +2309,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -2169,7 +2336,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -2194,7 +2363,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -2219,7 +2390,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Camden Hills",
@@ -2244,7 +2417,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -2271,7 +2446,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Winthrop",
@@ -2296,7 +2473,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Boothbay/Wiscasset",
@@ -2321,7 +2500,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lake Region",
@@ -2346,7 +2527,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lewiston",
@@ -2371,7 +2554,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "York",
@@ -2396,7 +2581,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Sacopee Valley",
@@ -2419,7 +2606,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Buckfield",
@@ -2436,8 +2624,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Buckfield",
-        "Dirigo"
+        "Dirigo",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -2446,7 +2634,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -2471,7 +2661,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lake Region",
@@ -2496,7 +2688,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oxford Hills",
@@ -2521,7 +2715,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -2546,7 +2742,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -2571,7 +2769,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -2596,7 +2796,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -2621,7 +2823,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -2646,7 +2850,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -2673,7 +2879,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Greely",
@@ -2698,7 +2906,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Yarmouth",
@@ -2723,7 +2933,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Madison",
@@ -2748,7 +2960,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -2773,7 +2987,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Rangeley",
@@ -2798,7 +3014,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Traip Academy",
@@ -2823,7 +3041,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -2832,7 +3052,7 @@ window.WM_DATA = {
       "dateISO": "2026-09-17",
       "dateRaw": "9.17.2026",
       "away": "Dirigo",
-      "home": "John Bapst/Bangor Christian/Ce",
+      "home": "John Bapst/Bangor Christian/Central Coop",
       "time": "TBA",
       "completed": true,
       "venueKnown": true,
@@ -2845,10 +3065,16 @@ window.WM_DATA = {
       "sourceUrl": "https://niftiiq.com/maine/football/dirigo/",
       "checked": "2026-10-10",
       "sourceUrls": [
-        "https://niftiiq.com/maine/football/dirigo/"
+        "https://niftiiq.com/maine/football/dirigo/",
+        "https://www.mpa.cc/SportPages/SportPageInfo.aspx?TournamentID=3"
       ],
       "awayScore": 6,
-      "homeScore": 18
+      "homeScore": 18,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10",
+      "originalOpponentLabel": "John Bapst/Bangor Christian/Ce",
+      "nameVerificationSource": "https://www.mpa.cc/SportPages/SportPageInfo.aspx?TournamentID=3",
+      "nameVerifiedOn": "2026-10-11"
     },
     {
       "away": "Dirigo",
@@ -2873,7 +3099,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Maranacook",
@@ -2898,7 +3126,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Traip Academy",
@@ -2923,7 +3153,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Yarmouth",
@@ -2948,7 +3180,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Boothbay Region",
@@ -2973,7 +3207,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Cape Elizabeth",
@@ -2998,7 +3234,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Gray-New Gloucester/NYA",
@@ -3021,7 +3259,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Oak Hill",
@@ -3046,7 +3285,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Freeport",
@@ -3071,7 +3312,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -3096,7 +3339,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -3121,7 +3366,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/sacopee-valley/"
       ],
       "awayScore": 44,
-      "homeScore": 6
+      "homeScore": 6,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lisbon",
@@ -3146,7 +3393,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oxford Hills/Buckfield",
@@ -3163,7 +3412,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Oxford Hills/Buckfield"
+        "Oxford Hills",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -3171,7 +3421,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=227"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -3196,7 +3448,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/telstar/"
       ],
       "awayScore": 8,
-      "homeScore": 36
+      "homeScore": 36,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -3213,8 +3467,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Buckfield",
-        "Mountain Valley"
+        "Mountain Valley",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -3223,7 +3477,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Madison",
@@ -3248,7 +3504,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Monmouth Academy",
@@ -3273,7 +3531,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -3298,7 +3558,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Waynflete",
@@ -3323,7 +3585,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Wells",
@@ -3348,7 +3612,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mount Blue",
@@ -3373,7 +3639,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Yarmouth",
@@ -3398,7 +3666,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Gray-New Gloucester",
@@ -3423,7 +3693,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -3448,7 +3720,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Waynflete",
@@ -3473,7 +3747,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Brewer",
@@ -3498,7 +3774,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -3523,7 +3801,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "York",
@@ -3548,7 +3828,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Bangor/John Bapst/Bucksport",
@@ -3573,7 +3855,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Boothbay Region",
@@ -3598,7 +3882,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lisbon",
@@ -3623,7 +3909,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -3648,7 +3936,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -3673,7 +3963,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -3698,7 +3990,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Richmond",
@@ -3723,7 +4017,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lake Region",
@@ -3748,7 +4044,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Brewer",
@@ -3773,7 +4071,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -3798,7 +4098,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Cape Elizabeth",
@@ -3823,7 +4125,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -3840,8 +4144,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Dirigo",
-        "Mountain Valley"
+        "Mountain Valley",
+        "Dirigo"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -3850,7 +4154,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Richmond",
@@ -3875,7 +4181,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -3892,8 +4200,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Buckfield",
-        "Mountain Valley"
+        "Mountain Valley",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -3902,7 +4210,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -3927,7 +4237,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Winthrop",
@@ -3952,7 +4264,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -3969,8 +4283,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Sacopee Valley",
-        "Telstar"
+        "Telstar",
+        "Sacopee Valley"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -3979,7 +4293,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Carrabec/Madison Co-op",
@@ -4004,7 +4320,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Freeport",
@@ -4029,7 +4347,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Hampden Academy",
@@ -4054,7 +4374,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -4077,7 +4399,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Freeport",
@@ -4102,7 +4425,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -4127,7 +4452,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Winthrop",
@@ -4152,7 +4479,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -4177,7 +4506,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Hampden Academy",
@@ -4202,7 +4533,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -4227,7 +4560,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Waynflete",
@@ -4252,7 +4587,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -4277,7 +4614,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/sacopee-valley/"
       ],
       "awayScore": 32,
-      "homeScore": 14
+      "homeScore": 14,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Camden Hills",
@@ -4301,7 +4640,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
       "checked": "2026-10-10",
-      "reviewNote": "Possible rescheduled duplicate; confirm with school."
+      "reviewNote": "Possible rescheduled duplicate; confirm with school.",
+      "verification": "pending"
     },
     {
       "away": "Dirigo",
@@ -4318,8 +4658,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Dirigo",
-        "Mountain Valley"
+        "Mountain Valley",
+        "Dirigo"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -4328,7 +4668,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -4353,7 +4695,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/telstar/"
       ],
       "awayScore": 36,
-      "homeScore": 40
+      "homeScore": 40,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -4378,7 +4722,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Winthrop",
@@ -4403,7 +4749,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Greely",
@@ -4428,7 +4776,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lake Region",
@@ -4453,7 +4803,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mount Blue",
@@ -4478,7 +4830,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lake Region",
@@ -4503,7 +4857,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oxford Hills",
@@ -4530,7 +4886,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -4555,7 +4913,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Greely",
@@ -4580,7 +4940,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -4605,7 +4967,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Camden Hills",
@@ -4628,7 +4992,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Gray-New Gloucester/NYA",
@@ -4651,7 +5016,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Mountain Valley",
@@ -4675,7 +5041,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
       "checked": "2026-10-10",
-      "reviewNote": "Possible rescheduled duplicate; confirm with school."
+      "reviewNote": "Possible rescheduled duplicate; confirm with school.",
+      "verification": "pending"
     },
     {
       "away": "Telstar",
@@ -4698,7 +5065,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Richmond",
@@ -4723,7 +5091,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -4740,8 +5110,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Buckfield",
-        "Mountain Valley"
+        "Mountain Valley",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -4750,7 +5120,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -4775,7 +5147,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Temple",
@@ -4800,7 +5174,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Brunswick",
@@ -4825,7 +5201,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Freeport",
@@ -4850,7 +5228,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Madison",
@@ -4875,7 +5255,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oxford Hills",
@@ -4898,7 +5280,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Poland Regional",
@@ -4923,7 +5306,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Temple",
@@ -4948,7 +5333,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lisbon",
@@ -4973,7 +5360,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Wells",
@@ -4998,7 +5387,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Yarmouth",
@@ -5023,7 +5414,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mt. Ararat",
@@ -5048,7 +5441,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "North Yarmouth Academy",
@@ -5073,7 +5468,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Vinalhaven/North Haven",
@@ -5098,7 +5495,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -5123,7 +5522,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Maranacook",
@@ -5148,7 +5549,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -5165,8 +5568,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Poland Regional",
-        "Sacopee Valley"
+        "Sacopee Valley",
+        "Poland Regional"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -5175,7 +5578,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -5200,7 +5605,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Brewer",
@@ -5225,7 +5632,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Spruce Mountain",
@@ -5250,7 +5659,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -5275,7 +5686,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/sacopee-valley/"
       ],
       "awayScore": 44,
-      "homeScore": 34
+      "homeScore": 34,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -5300,7 +5713,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Cape Elizabeth",
@@ -5325,7 +5740,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Freeport",
@@ -5350,7 +5767,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -5375,7 +5794,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -5400,7 +5821,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oak Hill",
@@ -5425,7 +5848,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Sacopee Valley",
@@ -5448,7 +5873,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Winthrop",
@@ -5473,7 +5899,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Leavitt",
@@ -5498,7 +5926,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lisbon",
@@ -5523,7 +5953,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Messalonskee",
@@ -5548,7 +5980,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -5573,7 +6007,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oxford Hills/Buckfield",
@@ -5590,7 +6026,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Oxford Hills/Buckfield"
+        "Oxford Hills",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -5598,7 +6035,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=227"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Hall-Dale",
@@ -5623,7 +6062,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -5648,7 +6089,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -5673,7 +6116,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Traip Academy",
@@ -5696,7 +6141,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Valley",
@@ -5721,7 +6167,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lewiston",
@@ -5746,7 +6194,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -5771,7 +6221,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -5796,7 +6248,9 @@ window.WM_DATA = {
         "https://niftiiq.com/maine/football/telstar/"
       ],
       "awayScore": 30,
-      "homeScore": 38
+      "homeScore": 38,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -5821,7 +6275,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Traip Academy",
@@ -5846,7 +6302,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Camden Hills",
@@ -5871,7 +6329,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Boothbay Region",
@@ -5896,7 +6356,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Hampden Academy/Mount View",
@@ -5921,7 +6383,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oak Hill",
@@ -5946,7 +6410,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Waynflete",
@@ -5971,7 +6437,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -5996,7 +6464,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Buckfield",
@@ -6021,7 +6491,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -6046,7 +6518,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Messalonskee",
@@ -6071,7 +6545,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -6096,7 +6572,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -6123,7 +6601,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Greely",
@@ -6148,7 +6628,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -6173,7 +6655,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Messalonskee",
@@ -6198,7 +6682,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -6223,7 +6709,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oak Hill",
@@ -6248,7 +6736,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Boys Soccer",
@@ -6269,11 +6759,30 @@ window.WM_DATA = {
       "source": "Hyde School",
       "sourceUrl": "https://www.hyde.edu/athletics/our-teams/boys-varsity-soccer",
       "sourceUrls": [
-        "https://www.hyde.edu/athletics/our-teams/boys-varsity-soccer"
+        "https://www.hyde.edu/athletics/our-teams/boys-varsity-soccer",
+        "https://www.gouldacademy.org/athleticsfsel-3707/boys-varsity-soccer"
       ],
       "checked": "2026-10-10",
       "awayScore": 1,
-      "homeScore": 8
+      "homeScore": 8,
+      "verification": "disputed",
+      "resultVerifiedOn": "2026-10-10",
+      "reviewChecked": "2026-10-11",
+      "reviewNote": "Conflicting official scores: Hyde lists an 8–1 win; Gould lists a 1–9 loss. Original reported score retained; final withheld pending school confirmation.",
+      "scoreReports": [
+        {
+          "team": "Hyde School",
+          "score": 8,
+          "opponentScore": 1,
+          "sourceUrl": "https://www.hyde.edu/athletics/our-teams/boys-varsity-soccer"
+        },
+        {
+          "team": "Gould Academy",
+          "score": 1,
+          "opponentScore": 9,
+          "sourceUrl": "https://www.gouldacademy.org/athleticsfsel-3707/boys-varsity-soccer"
+        }
+      ]
     },
     {
       "away": "Greely",
@@ -6298,7 +6807,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Lisbon",
@@ -6323,7 +6834,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mountain Valley",
@@ -6340,8 +6853,8 @@ window.WM_DATA = {
       "time": "TBA",
       "eventType": "game",
       "coveredTeams": [
-        "Dirigo",
-        "Mountain Valley"
+        "Mountain Valley",
+        "Dirigo"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -6350,7 +6863,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Mt. Ararat",
@@ -6375,7 +6890,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Wells",
@@ -6400,7 +6917,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Dirigo",
@@ -6425,7 +6944,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Poland Regional",
@@ -6450,7 +6971,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -6477,7 +7000,9 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Oxford Hills",
@@ -6500,7 +7025,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Richmond",
@@ -6525,7 +7051,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Telstar",
@@ -6550,7 +7078,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -6575,7 +7105,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Hall-Dale/Monmouth",
@@ -6600,7 +7132,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Morse",
@@ -6625,7 +7159,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Fryeburg Academy",
@@ -6650,7 +7186,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Richmond",
@@ -6675,7 +7212,9 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "North Yarmouth Academy",
@@ -6698,7 +7237,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Sacopee Valley",
@@ -6722,7 +7262,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
       "checked": "2026-10-10",
-      "reviewNote": "Sources list different start times."
+      "reviewNote": "Sources list different start times.",
+      "verification": "pending"
     },
     {
       "sport": "Football",
@@ -6737,8 +7278,8 @@ window.WM_DATA = {
       "venueKnown": false,
       "eventType": "game",
       "coveredTeams": [
-        "Buckfield",
-        "Oxford Hills"
+        "Oxford Hills",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "Varsity Maine",
@@ -6748,7 +7289,9 @@ window.WM_DATA = {
       ],
       "checked": "2026-10-10",
       "awayScore": 45,
-      "homeScore": 6
+      "homeScore": 6,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -6773,7 +7316,9 @@ window.WM_DATA = {
       ],
       "checked": "2026-10-10",
       "awayScore": 35,
-      "homeScore": 34
+      "homeScore": 34,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -6788,8 +7333,8 @@ window.WM_DATA = {
       "venueKnown": false,
       "eventType": "game",
       "coveredTeams": [
-        "Sacopee Valley",
-        "Telstar"
+        "Telstar",
+        "Sacopee Valley"
       ],
       "region": "Western ME",
       "source": "Varsity Maine",
@@ -6799,7 +7344,9 @@ window.WM_DATA = {
       ],
       "checked": "2026-10-10",
       "awayScore": 70,
-      "homeScore": 24
+      "homeScore": 24,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "sport": "Football",
@@ -6824,7 +7371,9 @@ window.WM_DATA = {
       ],
       "checked": "2026-10-10",
       "awayScore": 19,
-      "homeScore": 6
+      "homeScore": 6,
+      "verification": "verified",
+      "resultVerifiedOn": "2026-10-10"
     },
     {
       "away": "Madison",
@@ -6847,7 +7396,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=11"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Oxford Hills",
@@ -6870,7 +7420,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "sport": "Boys Soccer",
@@ -6893,7 +7444,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.gouldacademy.org/athleticsfsel-3707/boys-varsity-soccer"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Mountain Valley",
@@ -6916,7 +7468,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Sacopee Valley",
@@ -6939,7 +7492,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Fryeburg Academy",
@@ -6962,7 +7516,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Poland Regional",
@@ -6987,7 +7542,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Traip Academy",
@@ -7010,11 +7566,12 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Mountain Valley",
-      "home": "John Bapst/Bangor Christian/Ce",
+      "home": "John Bapst/Bangor Christian/Central Coop",
       "completed": false,
       "venueKnown": true,
       "sport": "Football",
@@ -7031,9 +7588,14 @@ window.WM_DATA = {
       "source": "downtownme.com",
       "sourceUrl": "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90",
       "sourceUrls": [
-        "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
+        "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90",
+        "https://www.mpa.cc/SportPages/SportPageInfo.aspx?TournamentID=3"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending",
+      "originalOpponentLabel": "John Bapst/Bangor Christian/Ce",
+      "nameVerificationSource": "https://www.mpa.cc/SportPages/SportPageInfo.aspx?TournamentID=3",
+      "nameVerifiedOn": "2026-10-11"
     },
     {
       "away": "Dirigo",
@@ -7056,7 +7618,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Lisbon",
@@ -7079,7 +7642,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Valley",
@@ -7102,7 +7666,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Winthrop",
@@ -7125,7 +7690,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Dirigo",
@@ -7150,7 +7716,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Lisbon",
@@ -7173,7 +7740,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Sacopee Valley",
@@ -7198,7 +7766,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Mount Abram",
@@ -7221,7 +7790,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Poland Regional",
@@ -7244,7 +7814,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "sport": "Boys Soccer",
@@ -7267,7 +7838,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.gouldacademy.org/athleticsfsel-3707/boys-varsity-soccer"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Boothbay Region",
@@ -7290,7 +7862,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Lake Region",
@@ -7313,7 +7886,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Poland Regional",
@@ -7336,7 +7910,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Telstar",
@@ -7361,7 +7936,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Traip Academy",
@@ -7384,7 +7960,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Winthrop",
@@ -7407,7 +7984,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Cape Elizabeth",
@@ -7430,7 +8008,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Mountain Valley",
@@ -7453,7 +8032,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Spruce Mountain",
@@ -7476,7 +8056,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Waynflete",
@@ -7499,7 +8080,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=111"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "York",
@@ -7522,7 +8104,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Freeport",
@@ -7545,7 +8128,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Fryeburg Academy",
@@ -7568,7 +8152,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=39"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Poland Regional",
@@ -7591,7 +8176,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "sport": "Boys Soccer",
@@ -7614,7 +8200,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.gouldacademy.org/athleticsfsel-3707/boys-varsity-soccer"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "sport": "Football",
@@ -7637,7 +8224,8 @@ window.WM_DATA = {
       "checked": "2026-10-10",
       "sourceUrls": [
         "https://niftiiq.com/maine/football/telstar/"
-      ]
+      ],
+      "verification": "pending"
     },
     {
       "sport": "Football",
@@ -7652,8 +8240,8 @@ window.WM_DATA = {
       "venueKnown": true,
       "eventType": "game",
       "coveredTeams": [
-        "Buckfield",
-        "Oxford Hills"
+        "Oxford Hills",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "niftiIQ (independent)",
@@ -7661,7 +8249,8 @@ window.WM_DATA = {
       "checked": "2026-10-10",
       "sourceUrls": [
         "https://niftiiq.com/maine/football/oxford-hills/"
-      ]
+      ],
+      "verification": "pending"
     },
     {
       "sport": "Football",
@@ -7684,7 +8273,8 @@ window.WM_DATA = {
       "checked": "2026-10-10",
       "sourceUrls": [
         "https://niftiiq.com/maine/football/sacopee-valley/"
-      ]
+      ],
+      "verification": "pending"
     },
     {
       "away": "Dirigo",
@@ -7707,7 +8297,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Mount Blue",
@@ -7730,7 +8321,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=100"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Mountain Valley",
@@ -7753,7 +8345,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Telstar",
@@ -7776,7 +8369,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=123"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Dirigo",
@@ -7799,7 +8393,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=26"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Mountain Valley",
@@ -7824,7 +8419,8 @@ window.WM_DATA = {
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=104",
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=90"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "away": "Noble",
@@ -7839,7 +8435,8 @@ window.WM_DATA = {
       "time": "7 pm",
       "eventType": "game",
       "coveredTeams": [
-        "Oxford Hills/Buckfield"
+        "Oxford Hills",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -7847,7 +8444,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=227"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "sport": "Football",
@@ -7870,7 +8468,8 @@ window.WM_DATA = {
       "checked": "2026-10-10",
       "sourceUrls": [
         "https://niftiiq.com/maine/football/fryeburg-academy/"
-      ]
+      ],
+      "verification": "pending"
     },
     {
       "sport": "Football",
@@ -7893,7 +8492,8 @@ window.WM_DATA = {
       "checked": "2026-10-10",
       "sourceUrls": [
         "https://niftiiq.com/maine/football/sacopee-valley/"
-      ]
+      ],
+      "verification": "pending"
     },
     {
       "sport": "Football",
@@ -7916,7 +8516,8 @@ window.WM_DATA = {
       "checked": "2026-10-10",
       "sourceUrls": [
         "https://niftiiq.com/maine/football/telstar/"
-      ]
+      ],
+      "verification": "pending"
     },
     {
       "away": "Oxford Hills/Buckfield",
@@ -7931,7 +8532,8 @@ window.WM_DATA = {
       "time": "7 pm",
       "eventType": "game",
       "coveredTeams": [
-        "Oxford Hills/Buckfield"
+        "Oxford Hills",
+        "Buckfield"
       ],
       "region": "Western ME",
       "source": "downtownme.com",
@@ -7939,7 +8541,8 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.downtownme.com/sports/sports.asp?strFunction=GetScheduleBySchool&intSchool=227"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     },
     {
       "sport": "Girls Soccer",
@@ -7962,44 +8565,54 @@ window.WM_DATA = {
       "sourceUrls": [
         "https://www.hyde.edu/athletics/our-teams/girls-varsity-soccer"
       ],
-      "checked": "2026-10-10"
+      "checked": "2026-10-10",
+      "verification": "pending"
     }
   ],
   "teams": [
     {
-      "name": "Buckfield",
+      "name": "Mountain Valley",
+      "displayName": "Mountain Valley",
       "highlight": true
     },
     {
       "name": "Dirigo",
-      "highlight": true
-    },
-    {
-      "name": "Fryeburg Academy",
-      "highlight": true
-    },
-    {
-      "name": "Mountain Valley",
-      "highlight": true
-    },
-    {
-      "name": "Oxford Hills",
-      "highlight": true
-    },
-    {
-      "name": "Poland Regional",
-      "highlight": true
-    },
-    {
-      "name": "Sacopee Valley",
+      "displayName": "Dirigo",
       "highlight": true
     },
     {
       "name": "Telstar",
+      "displayName": "Telstar",
+      "highlight": true
+    },
+    {
+      "name": "Buckfield",
+      "displayName": "Buckfield",
+      "highlight": true
+    },
+    {
+      "name": "Oxford Hills",
+      "displayName": "Oxford Hills Comprehensive",
       "highlight": true
     },
     {
       "name": "Gould Academy",
+      "displayName": "Gould Academy",
+      "highlight": true
+    },
+    {
+      "name": "Fryeburg Academy",
+      "displayName": "Fryeburg Academy",
+      "highlight": true
+    },
+    {
+      "name": "Sacopee Valley",
+      "displayName": "Sacopee Valley",
+      "highlight": true
+    },
+    {
+      "name": "Poland Regional",
+      "displayName": "Poland Regional",
       "highlight": true
     }
   ],
@@ -8168,20 +8781,200 @@ window.WM_DATA = {
     }
   },
   "standings": {
-    "lastUpdated": "2026-10-10 — 32 verified school/sport entries",
+    "lastUpdated": "2026-10-10",
     "rows": [
+      {
+        "team": "Mountain Valley",
+        "sport": "Football",
+        "rank": 7,
+        "record": "1-4",
+        "status": "Verified MPA snapshot",
+        "classification": "D",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 1,
+        "latest": "Oct 2, 2026: Mountain Valley 20–0 Belfast",
+        "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
+        "crabtreeIndex": 66.667
+      },
+      {
+        "team": "Mountain Valley",
+        "sport": "Boys Soccer",
+        "rank": 7,
+        "record": "5-4-2",
+        "status": "Verified MPA snapshot",
+        "classification": "C",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 2,
+        "latest": "Oct 7, 2026: Lisbon 3–0 Mountain Valley",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 44.949
+      },
+      {
+        "team": "Mountain Valley",
+        "sport": "Girls Soccer",
+        "rank": 7,
+        "record": "4-6-1",
+        "status": "Verified MPA snapshot",
+        "classification": "8 Person",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 1,
+        "latest": "Oct 8, 2026: Richmond 8–0 Mountain Valley",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 16.821
+      },
+      {
+        "team": "Mountain Valley",
+        "sport": "Field Hockey",
+        "rank": 4,
+        "record": "7-3-0",
+        "status": "Verified MPA snapshot",
+        "classification": "C",
+        "region": "North",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 2,
+        "latest": "Oct 7, 2026: Mountain Valley 8–1 Dirigo",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 40.0
+      },
+      {
+        "team": "Dirigo",
+        "sport": "Football",
+        "rank": 5,
+        "record": "2-4",
+        "status": "Verified MPA snapshot",
+        "classification": "D",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 0,
+        "latest": "Oct 9, 2026: Winthrop 19–6 Dirigo",
+        "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
+        "crabtreeIndex": 89.216
+      },
+      {
+        "team": "Dirigo",
+        "sport": "Boys Soccer",
+        "rank": 11,
+        "record": "2-9-0",
+        "status": "Verified MPA snapshot",
+        "classification": "8 Person",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 0,
+        "latest": "Oct 6, 2026: Telstar 7–0 Dirigo",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 7.483
+      },
+      {
+        "team": "Dirigo",
+        "sport": "Girls Soccer",
+        "rank": 6,
+        "record": "7-5-0",
+        "status": "Verified MPA snapshot",
+        "classification": "8 Person",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 2,
+        "latest": "Oct 7, 2026: Dirigo 2–1 Madison",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 39.434
+      },
+      {
+        "team": "Dirigo",
+        "sport": "Field Hockey",
+        "rank": 9,
+        "record": "2-10-0",
+        "status": "Verified MPA snapshot",
+        "classification": "C",
+        "region": "North",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 1,
+        "latest": "Oct 7, 2026: Mountain Valley 8–1 Dirigo",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 7.347
+      },
+      {
+        "team": "Telstar",
+        "sport": "Football",
+        "rank": 3,
+        "record": "3-3",
+        "status": "Verified MPA snapshot",
+        "classification": "8 Man Small",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 0,
+        "latest": "Oct 9, 2026: Telstar 70–24 Sacopee Valley",
+        "sourceNote": "MPA South-8 Man Small football table supplied in Pasted markdown(20261010-223921).md; captured October 10. Page update timestamp not supplied.",
+        "crabtreeIndex": 104.286
+      },
+      {
+        "team": "Telstar",
+        "sport": "Boys Soccer",
+        "rank": 2,
+        "record": "10-0-0",
+        "status": "Verified MPA snapshot",
+        "classification": "8 Person",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 0,
+        "latest": "Oct 8, 2026: Telstar 10–2 Islesboro",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 62.993
+      },
+      {
+        "team": "Telstar",
+        "sport": "Girls Soccer",
+        "rank": 3,
+        "record": "5-6-0",
+        "status": "Verified MPA snapshot",
+        "classification": "D",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 2,
+        "latest": "Oct 6, 2026: Oak Hill 4–1 Telstar",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 11.837
+      },
+      {
+        "team": "Telstar",
+        "sport": "Field Hockey",
+        "rank": 10,
+        "record": "1-10-0",
+        "status": "Verified MPA snapshot",
+        "classification": "C",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 2,
+        "latest": "Oct 8, 2026: Hall-Dale/Monmouth 8–0 Telstar",
+        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
+        "tournamentIndex": 0.714
+      },
       {
         "team": "Buckfield",
         "sport": "Football",
         "rank": 1,
         "record": "4-1",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 9, 2026: Bonny Eagle 45–6 Oxford Hills/Buckfield",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
         "classification": "A",
         "region": "North",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 0,
+        "latest": "Oct 9, 2026: Bonny Eagle 45–6 Oxford Hills/Buckfield",
         "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied. MPA supplied record is 4-1; reported-score listings differ and require reconciliation.",
         "crabtreeIndex": 122.857,
         "standingTeam": "Oxford Hills/Buckfield Coop"
@@ -8192,12 +8985,12 @@ window.WM_DATA = {
         "rank": 3,
         "record": "5-5-2",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 8, 2026: Richmond 4–1 Buckfield",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
         "classification": "D",
         "region": "South",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 0,
+        "latest": "Oct 8, 2026: Richmond 4–1 Buckfield",
         "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
         "tournamentIndex": 40.612
       },
@@ -8207,194 +9000,14 @@ window.WM_DATA = {
         "rank": 4,
         "record": "9-2-0",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 5, 2026: Buckfield 3–0 Vinalhaven/North Haven",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
         "classification": "8 Person",
         "region": "South",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 1,
+        "latest": "Oct 5, 2026: Buckfield 3–0 Vinalhaven/North Haven",
         "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
         "tournamentIndex": 70.454
-      },
-      {
-        "team": "Dirigo",
-        "sport": "Football",
-        "rank": 5,
-        "record": "2-4",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 9, 2026: Winthrop 19–6 Dirigo",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
-        "classification": "D",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
-        "crabtreeIndex": 89.216
-      },
-      {
-        "team": "Dirigo",
-        "sport": "Boys Soccer",
-        "rank": 11,
-        "record": "2-9-0",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 6, 2026: Telstar 7–0 Dirigo",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
-        "classification": "8 Person",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
-        "tournamentIndex": 7.483
-      },
-      {
-        "team": "Dirigo",
-        "sport": "Girls Soccer",
-        "rank": 6,
-        "record": "7-5-0",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 7, 2026: Dirigo 2–1 Madison",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2,
-        "classification": "8 Person",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
-        "tournamentIndex": 39.434
-      },
-      {
-        "team": "Dirigo",
-        "sport": "Field Hockey",
-        "rank": 9,
-        "record": "2-10-0",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 7, 2026: Mountain Valley 8–1 Dirigo",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
-        "classification": "C",
-        "region": "North",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
-        "tournamentIndex": 7.347
-      },
-      {
-        "team": "Fryeburg Academy",
-        "sport": "Football",
-        "rank": 5,
-        "record": "2-4",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 9, 2026: Kennebunk 35–34 Fryeburg Academy",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
-        "classification": "B",
-        "region": "North",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA table supplied in class-b-standings.odt; captured October 10. Page update timestamp not supplied.",
-        "crabtreeIndex": 94.444
-      },
-      {
-        "team": "Fryeburg Academy",
-        "sport": "Boys Soccer",
-        "rank": 2,
-        "record": "8-2-1",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 8, 2026: Fryeburg Academy 9–1 Sacopee Valley",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
-        "classification": "B",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA 2026-27 Class South-B boys soccer table copied October 10; page update timestamp not supplied.",
-        "tournamentIndex": 93.291
-      },
-      {
-        "team": "Fryeburg Academy",
-        "sport": "Girls Soccer",
-        "rank": 8,
-        "record": "4-7-1",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 1, 2026: Freeport 5–1 Fryeburg Academy",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
-        "classification": "B",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
-        "tournamentIndex": 25.128
-      },
-      {
-        "team": "Fryeburg Academy",
-        "sport": "Field Hockey",
-        "rank": 8,
-        "record": "2-8-0",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 8, 2026: Fryeburg Academy 1–0 York",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 3,
-        "classification": "B",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA 2026-27 Class South-B field hockey table copied October 10; page update timestamp not supplied.",
-        "tournamentIndex": 8.673
-      },
-      {
-        "team": "Mountain Valley",
-        "sport": "Football",
-        "rank": 7,
-        "record": "1-4",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 2, 2026: Mountain Valley 20–0 Belfast",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
-        "classification": "D",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
-        "crabtreeIndex": 66.667
-      },
-      {
-        "team": "Mountain Valley",
-        "sport": "Boys Soccer",
-        "rank": 7,
-        "record": "5-4-2",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 7, 2026: Lisbon 3–0 Mountain Valley",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2,
-        "classification": "C",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
-        "tournamentIndex": 44.949
-      },
-      {
-        "team": "Mountain Valley",
-        "sport": "Girls Soccer",
-        "rank": 7,
-        "record": "4-6-1",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 8, 2026: Richmond 8–0 Mountain Valley",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
-        "classification": "8 Person",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
-        "tournamentIndex": 16.821
-      },
-      {
-        "team": "Mountain Valley",
-        "sport": "Field Hockey",
-        "rank": 4,
-        "record": "7-3-0",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 7, 2026: Mountain Valley 8–1 Dirigo",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2,
-        "classification": "C",
-        "region": "North",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
-        "tournamentIndex": 40.0
       },
       {
         "team": "Oxford Hills",
@@ -8402,12 +9015,12 @@ window.WM_DATA = {
         "rank": 1,
         "record": "4-1",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 9, 2026: Bonny Eagle 45–6 Oxford Hills/Buckfield",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
         "classification": "A",
         "region": "North",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 0,
+        "latest": "Oct 9, 2026: Bonny Eagle 45–6 Oxford Hills/Buckfield",
         "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied. MPA supplied record is 4-1; reported-score listings differ and require reconciliation.",
         "crabtreeIndex": 122.857,
         "standingTeam": "Oxford Hills/Buckfield Coop"
@@ -8418,12 +9031,12 @@ window.WM_DATA = {
         "rank": 11,
         "record": "0-11-0",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 6, 2026: Messalonskee 4–1 Oxford Hills",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2,
         "classification": "A",
         "region": "North",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 2,
+        "latest": "Oct 6, 2026: Messalonskee 4–1 Oxford Hills",
         "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
         "tournamentIndex": 0.0
       },
@@ -8433,12 +9046,12 @@ window.WM_DATA = {
         "rank": 11,
         "record": "0-9-1",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 6, 2026: Messalonskee 3–1 Oxford Hills",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2,
         "classification": "A",
         "region": "North",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 2,
+        "latest": "Oct 6, 2026: Messalonskee 3–1 Oxford Hills",
         "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
         "tournamentIndex": 2.041
       },
@@ -8448,74 +9061,100 @@ window.WM_DATA = {
         "rank": 9,
         "record": "3-9-1",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 7, 2026: Mt. Ararat 2–0 Oxford Hills",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
         "classification": "A",
         "region": "North",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 0,
+        "latest": "Oct 7, 2026: Mt. Ararat 2–0 Oxford Hills",
         "sourceNote": "MPA table supplied in class-a-standings.odt; captured October 10. Page update timestamp not supplied.",
         "tournamentIndex": 30.867
       },
       {
-        "team": "Poland Regional",
+        "team": "Gould Academy",
+        "sport": "Boys Soccer",
+        "rank": "N/A",
+        "record": "Not verified",
+        "status": "Separate prep-school standings",
+        "classification": "Prep school",
+        "region": "MAISAD / NEPSAC",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.gouldacademy.org/athletics",
+        "pending": 2,
+        "latest": "No confirmed final in this snapshot"
+      },
+      {
+        "team": "Gould Academy",
+        "sport": "Girls Soccer",
+        "rank": "N/A",
+        "record": "Not verified",
+        "status": "Separate prep-school standings",
+        "classification": "Prep school",
+        "region": "MAISAD / NEPSAC",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.gouldacademy.org/athletics",
+        "pending": 0,
+        "latest": "No confirmed final in this snapshot"
+      },
+      {
+        "team": "Fryeburg Academy",
         "sport": "Football",
-        "rank": 6,
-        "record": "1-5",
+        "rank": 5,
+        "record": "2-4",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 8, 2026: Morse 40–6 Poland Regional",
+        "classification": "B",
+        "region": "North",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 1,
+        "latest": "Oct 9, 2026: Kennebunk 35–34 Fryeburg Academy",
+        "sourceNote": "MPA table supplied in class-b-standings.odt; captured October 10. Page update timestamp not supplied.",
+        "crabtreeIndex": 94.444
+      },
+      {
+        "team": "Fryeburg Academy",
+        "sport": "Boys Soccer",
+        "rank": 2,
+        "record": "8-2-1",
+        "status": "Verified MPA snapshot",
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
-        "classification": "D",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
-        "crabtreeIndex": 80.556
-      },
-      {
-        "team": "Poland Regional",
-        "sport": "Boys Soccer",
-        "rank": 9,
-        "record": "4-6-2",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 7, 2026: Greely 5–0 Poland Regional",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
-        "classification": "B",
-        "region": "South",
-        "checked": "2026-10-10",
+        "latest": "Oct 8, 2026: Fryeburg Academy 9–1 Sacopee Valley",
         "sourceNote": "MPA 2026-27 Class South-B boys soccer table copied October 10; page update timestamp not supplied.",
-        "tournamentIndex": 41.939
+        "tournamentIndex": 93.291
       },
       {
-        "team": "Poland Regional",
+        "team": "Fryeburg Academy",
         "sport": "Girls Soccer",
-        "rank": 3,
-        "record": "8-1-2",
+        "rank": 8,
+        "record": "4-7-1",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 7, 2026: Poland Regional 2–2 Greely",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
         "classification": "B",
         "region": "South",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 1,
+        "latest": "Oct 1, 2026: Freeport 5–1 Fryeburg Academy",
         "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
-        "tournamentIndex": 72.168
+        "tournamentIndex": 25.128
       },
       {
-        "team": "Poland Regional",
+        "team": "Fryeburg Academy",
         "sport": "Field Hockey",
-        "rank": 5,
-        "record": "3-8-1",
+        "rank": 8,
+        "record": "2-8-0",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 6, 2026: Poland Regional 2–0 Lake Region",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
         "classification": "B",
         "region": "South",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 3,
+        "latest": "Oct 8, 2026: Fryeburg Academy 1–0 York",
         "sourceNote": "MPA 2026-27 Class South-B field hockey table copied October 10; page update timestamp not supplied.",
-        "tournamentIndex": 22.423
+        "tournamentIndex": 8.673
       },
       {
         "team": "Sacopee Valley",
@@ -8523,12 +9162,12 @@ window.WM_DATA = {
         "rank": 5,
         "record": "1-5",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 9, 2026: Telstar 70–24 Sacopee Valley",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
         "classification": "8 Man Small",
         "region": "South",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 0,
+        "latest": "Oct 9, 2026: Telstar 70–24 Sacopee Valley",
         "sourceNote": "MPA South-8 Man Small football table supplied in Pasted markdown(20261010-223921).md; captured October 10. Page update timestamp not supplied.",
         "crabtreeIndex": 77.273
       },
@@ -8538,12 +9177,12 @@ window.WM_DATA = {
         "rank": 12,
         "record": "2-7-1",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 8, 2026: Fryeburg Academy 9–1 Sacopee Valley",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2,
         "classification": "C",
         "region": "South",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 2,
+        "latest": "Oct 8, 2026: Fryeburg Academy 9–1 Sacopee Valley",
         "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
         "tournamentIndex": 17.092
       },
@@ -8553,12 +9192,12 @@ window.WM_DATA = {
         "rank": 12,
         "record": "0-11-0",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 3, 2026: Traip Academy 3–0 Sacopee Valley",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2,
         "classification": "C",
         "region": "South",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 2,
+        "latest": "Oct 3, 2026: Traip Academy 3–0 Sacopee Valley",
         "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
         "tournamentIndex": 0.0
       },
@@ -8568,105 +9207,79 @@ window.WM_DATA = {
         "rank": 9,
         "record": "3-8-0",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 7, 2026: Wells 1–0 Sacopee Valley",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 5,
         "classification": "C",
         "region": "South",
         "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 5,
+        "latest": "Oct 7, 2026: Wells 1–0 Sacopee Valley",
         "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
         "tournamentIndex": 3.265
       },
       {
-        "team": "Telstar",
+        "team": "Poland Regional",
         "sport": "Football",
-        "rank": 3,
-        "record": "3-3",
+        "rank": 6,
+        "record": "1-5",
         "status": "Verified MPA snapshot",
-        "latest": "Oct 9, 2026: Telstar 70–24 Sacopee Valley",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
-        "classification": "8 Man Small",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA South-8 Man Small football table supplied in Pasted markdown(20261010-223921).md; captured October 10. Page update timestamp not supplied.",
-        "crabtreeIndex": 104.286
-      },
-      {
-        "team": "Telstar",
-        "sport": "Boys Soccer",
-        "rank": 2,
-        "record": "10-0-0",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 8, 2026: Telstar 10–2 Islesboro",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 0,
-        "classification": "8 Person",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
-        "tournamentIndex": 62.993
-      },
-      {
-        "team": "Telstar",
-        "sport": "Girls Soccer",
-        "rank": 3,
-        "record": "5-6-0",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 6, 2026: Oak Hill 4–1 Telstar",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2,
         "classification": "D",
         "region": "South",
         "checked": "2026-10-10",
-        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
-        "tournamentIndex": 11.837
-      },
-      {
-        "team": "Telstar",
-        "sport": "Field Hockey",
-        "rank": 10,
-        "record": "1-10-0",
-        "status": "Verified MPA snapshot",
-        "latest": "Oct 8, 2026: Hall-Dale/Monmouth 8–0 Telstar",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 2,
-        "classification": "C",
-        "region": "South",
-        "checked": "2026-10-10",
-        "sourceNote": "MPA tables supplied in Pasted text(20261010-224502).txt; captured October 10. Page update timestamp not supplied.",
-        "tournamentIndex": 0.714
-      },
-      {
-        "team": "Gould Academy",
-        "sport": "Boys Soccer",
-        "rank": "N/A",
-        "record": "Not verified",
-        "status": "Separate prep-school standings",
-        "latest": "Oct 7, 2026: Gould Academy 1–8 Hyde School",
-        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-        "pending": 1,
-        "classification": "Prep school",
-        "region": "MAISAD / NEPSAC",
-        "checked": "2026-10-10"
-      },
-      {
-        "team": "Gould Academy",
-        "sport": "Girls Soccer",
-        "rank": "N/A",
-        "record": "Not verified",
-        "status": "Separate prep-school standings",
-        "latest": "No verified result",
         "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
         "pending": 0,
-        "classification": "Prep school",
-        "region": "MAISAD / NEPSAC",
-        "checked": "2026-10-10"
+        "latest": "Oct 8, 2026: Morse 40–6 Poland Regional",
+        "sourceNote": "MPA 2026-27 Class South-D football table copied October 10; Mountain Valley October 10 game still listed as remaining. Page update timestamp not supplied.",
+        "crabtreeIndex": 80.556
+      },
+      {
+        "team": "Poland Regional",
+        "sport": "Boys Soccer",
+        "rank": 9,
+        "record": "4-6-2",
+        "status": "Verified MPA snapshot",
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 1,
+        "latest": "Oct 7, 2026: Greely 5–0 Poland Regional",
+        "sourceNote": "MPA 2026-27 Class South-B boys soccer table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 41.939
+      },
+      {
+        "team": "Poland Regional",
+        "sport": "Girls Soccer",
+        "rank": 3,
+        "record": "8-1-2",
+        "status": "Verified MPA snapshot",
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 1,
+        "latest": "Oct 7, 2026: Poland Regional 2–2 Greely",
+        "sourceNote": "MPA 2026-27 table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 72.168
+      },
+      {
+        "team": "Poland Regional",
+        "sport": "Field Hockey",
+        "rank": 5,
+        "record": "3-8-1",
+        "status": "Verified MPA snapshot",
+        "classification": "B",
+        "region": "South",
+        "checked": "2026-10-10",
+        "sourceUrl": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+        "pending": 1,
+        "latest": "Oct 6, 2026: Poland Regional 2–0 Lake Region",
+        "sourceNote": "MPA 2026-27 Class South-B field hockey table copied October 10; page update timestamp not supplied.",
+        "tournamentIndex": 22.423
       },
       {
         "team": "Massabesic/Sacopee Coop",
         "sport": "Girls Volleyball",
-        "latest": "No verified result",
+        "latest": "No confirmed final in this snapshot",
         "pending": 0,
         "classification": "A",
         "region": "Statewide",
@@ -8680,50 +9293,60 @@ window.WM_DATA = {
       }
     ],
     "football": [],
-    "note": "Verified standings are from MPA tables supplied October 10; the page update timestamp was not included. All listed MPA standings have been entered; Gould has separate prep-school standings. Qualifying/non-qualifying labels during the season are provisional, not final playoff decisions. Football has separate seeding rules. Missing scores are not losses."
+    "note": "Each MPA ranking and season record shows its original capture date; the page update timestamp was not supplied. The cooperative Oxford Hills/Buckfield football entry appears once in the table. Its supplied MPA record differs from score listings and is preserved for reconciliation. Gould follows separate prep-school standings. In-season ranks are not confirmed playoff berths or seeds. Missing scores are not losses."
   },
   "updateLog": [
     {
-      "week": "October refresh",
+      "week": "Verification review",
+      "date": "2026-10-11",
+      "summary": "Withheld Gould–Hyde boys soccer because official school pages disagree; original score retained. Expanded Mountain Valley’s truncated football opponent name using the official MPA page, retaining the original label. No scores or MPA standings were substituted."
+    },
+    {
+      "week": "October snapshot",
       "date": "2026-10-10",
-      "summary": "Refreshed 321 source-linked games and reported results for WMR coverage schools. Duplicate scheduled/result rows reconciled. Missing results and source conflicts flagged. Official rankings remain pending."
+      "summary": "321 source-linked entries; 250 confirmed finals after the conflict review. 31 distinct MPA tournament entries captured October 10. Missing results and possible rescheduled duplicates remain flagged."
     }
   ],
   "sources": [
     {
-      "name": "Local school schedules and reported results",
-      "url": "https://www.downtownme.com/sports/sports.asp",
-      "use": "September–October listings checked October 10; dates/times may need school confirmation."
+      "name": "MPA official standings",
+      "url": "https://www.mpa.cc/TournamentCentralRankings.aspx",
+      "use": "Official tournament ranks and season records captured October 10; current pages can differ from this historical snapshot."
     },
     {
-      "name": "niftiIQ football schedules",
-      "url": "https://niftiiq.com/maine/football/",
-      "use": "Independent football schedule/result listings, checked October 10. Not official MPA rankings."
-    },
-    {
-      "name": "Varsity Maine daily scores",
-      "url": "https://www.varsitymaine.com/daily-scores-and-schedules-combined",
-      "use": "October 9 football results."
-    },
-    {
-      "name": "Gould Academy athletics",
+      "name": "School athletics pages",
       "url": "https://www.gouldacademy.org/athletics",
-      "use": "Prep-school schedules; Gould does not share the public-school MPA ranking structure."
+      "use": "Primary schedules and finals; Gould follows prep-school competition. Conflicting scores require confirmation."
     },
     {
       "name": "Hyde School boys soccer",
       "url": "https://www.hyde.edu/athletics/our-teams/boys-varsity-soccer",
-      "use": "October 7 Gould result."
+      "use": "October 7 Gould result conflicts with Gould’s page; withheld pending confirmation."
     },
     {
-      "name": "MPA official standings",
-      "url": "https://www.mpa.cc/TournamentCentralRankings.aspx",
-      "use": "Official ranks and tournament seeds; automated retrieval was blocked."
+      "name": "Gould boys soccer",
+      "url": "https://www.gouldacademy.org/athleticsfsel-3707/boys-varsity-soccer",
+      "use": "October 7 score discrepancy reviewed October 11; school schedules include separate prep competitions."
+    },
+    {
+      "name": "Varsity Maine daily scores",
+      "url": "https://www.varsitymaine.com/daily-scores-and-schedules-combined",
+      "use": "Reviewed October 9 football scores in the October 10 snapshot."
+    },
+    {
+      "name": "Local schedules and reported results",
+      "url": "https://www.downtownme.com/sports/sports.asp",
+      "use": "Secondary listings reviewed October 10. Confirm missing results, schedule changes and disputes with schools or MPA."
+    },
+    {
+      "name": "niftiIQ football schedules",
+      "url": "https://niftiiq.com/maine/football/",
+      "use": "Independent football listings from the reviewed October 10 snapshot; not official MPA rankings."
     },
     {
       "name": "MPA 2026 soccer bulletin",
       "url": "https://www.mpa.cc/resources/Tournament%20Info/Soccer%20Boys/Bulletin%202026-27.pdf",
-      "use": "Current soccer playoff rules and dates."
+      "use": "Official 2026 rules, classifications and tournament dates; latest checked October 11."
     }
   ]
 };

@@ -534,8 +534,9 @@ data = {
 js = "/* Western Maine 2026 Fall Sports — data module\n   Generated from verified MPA / school / local-news sources. See sources list. */\n"
 js += "window.WM_DATA = " + json.dumps(data, indent=2) + ";\n"
 
-import os
-os.makedirs("./western-maine-sports/js", exist_ok=True)
-with open("./western-maine-sports/js/data.js","w") as f:
+from pathlib import Path
+out = Path(__file__).resolve().parent / 'legacy_generated_candidate.js'
+with out.open("w") as f:
     f.write(js)
-print(f"Wrote js/data.js — {len(schedule)} games, {len(athletes)} athletes, {len(sources)} sources")
+print(f"Wrote unpublished historical candidate {out.name} — {len(schedule)} games. Use the reviewed publication workflow for the dashboard.")
+

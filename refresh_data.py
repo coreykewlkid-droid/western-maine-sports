@@ -3,6 +3,7 @@
 import argparse, concurrent.futures, datetime as dt, html, json, re, urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from sports_data import COVERAGE, canonical_team, covered_teams, game_key
 ROOT=Path(__file__).resolve().parent
 SCHOOLS={'Buckfield':11,'Dirigo':26,'Fryeburg Academy':39,'Mountain Valley':90,'Oxford Hills':100,'Oxford Hills/Buckfield':227,'Poland Regional':104,'Sacopee Valley':111,'Telstar':123}
 SPORTS={'Football':'Football','Soccer - Boys':'Boys Soccer','Soccer - Girls':'Girls Soccer','Field Hockey':'Field Hockey'}
@@ -23,12 +24,14 @@ def parse_page(body, school, url, today):
         scheduled=re.fullmatch(r'(.+?) at (.+)',game)
         if result:
             left,ls,right,rs=result.groups(); ls=int(ls);rs=int(rs)
-            row={'away':left,'home':right,'awayScore':ls,'homeScore':rs,'completed':True,'venueKnown':False}
+            row={'away':canonical_team(left),'home':canonical_team(right),'awayScore':ls,'homeScore':rs,'completed':True,'venueKnown':False}
             if date>today: raise ValueError('Future result')
         elif scheduled:
-            left,right=scheduled.groups();row={'away':left,'home':right,'completed':False,'venueKnown':True}
+            left,right=scheduled.groups();row={'away':canonical_team(left),'home':canonical_team(right),'completed':False,'venueKnown':True}
         else: continue
-        row.update(sport=sport,gender='Girls' if sport in ('Girls Soccer','Field Hockey') else 'Boys',date=date.strftime('%b %-d, %Y'),dateRaw=f'{date.month}.{date.day}.{date.year}',dateISO=date.isoformat(),time=time or 'TBA',eventType='game',coveredTeams=[school],region='Western ME',source='downtownme.com',sourceUrl=url,sourceUrls=[url],checked=today.isoformat())
+        row.update(sport=sport,gender='Girls' if sport in ('Girls Soccer','Field Hockey') else 'Boys',date=date.strftime('%b %-d, %Y'),dateRaw=f'{date.month}.{date.day}.{date.year}',dateISO=date.isoformat(),time=time or 'TBA',eventType='game',region='Western ME',source='downtownme.com',sourceUrl=url,sourceUrls=[url],checked=today.isoformat(),verification='pending')
+        row['coveredTeams']=covered_teams(row)
+        if not row['coveredTeams']: continue
         rows.append(row)
     if not rows and school!='Oxford Hills/Buckfield': raise ValueError('Empty schedule')
     return rows
@@ -46,7 +49,7 @@ def main():
     groups={}
     for row in sum(batches,[]):
         # Result lists put the winner first; they do not specify venue.
-        k=(row['sport'],row['dateISO'],*sorted([row['away'],row['home']]))
+        k=game_key(row)
         if k not in groups: groups[k]=[]
         groups[k].append(row)
     rows=[];conflicts=[]
@@ -54,7 +57,8 @@ def main():
         finals=[x for x in items if x['completed']]; chosen=(finals or items)[0].copy()
         scores={tuple(sorted([(x['away'],x['awayScore']),(x['home'],x['homeScore'])])) for x in finals}
         if len(scores)>1:
-            chosen['completed']=False;chosen.pop('awayScore',None);chosen.pop('homeScore',None);chosen['reviewNote']='Conflicting reported scores; result withheld.';conflicts.append({'key':key,'reason':chosen['reviewNote']})
+            chosen['scoreReports']=[{'away':x['away'],'awayScore':x['awayScore'],'home':x['home'],'homeScore':x['homeScore'],'sourceUrl':x['sourceUrl']} for x in finals]
+            chosen['completed']=False;chosen['verification']='disputed';chosen.pop('awayScore',None);chosen.pop('homeScore',None);chosen['reviewNote']='Conflicting reported scores; result withheld.';conflicts.append({'key':key,'reason':chosen['reviewNote']})
         clocks={x['time'] for x in items if x['time']!='TBA'}
         if not finals and len(clocks)>1:
             chosen['time']='Confirm time';chosen['reviewNote']='Sources list different start times.';conflicts.append({'key':key,'reason':chosen['reviewNote']})
@@ -69,7 +73,8 @@ def main():
                 row['reviewNote']='Possible rescheduled duplicate; confirm with school.'
                 break
     rows.sort(key=lambda x:(x['dateISO'],x['sport'],x['away'],x['home']))
-    payload={'checked':today.isoformat(),'schedule':rows,'conflicts':conflicts,'coverage':[n for n in SCHOOLS if n!='Oxford Hills/Buckfield']+['Gould Academy']}
-    (ROOT/'verified_schedule.json').write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n')
+    payload={'checked':today.isoformat(),'publicationStatus':'Unreviewed candidates — not for publication','schedule':rows,'conflicts':conflicts,'coverage':list(COVERAGE)}
+    (ROOT/'schedule_candidates.json').write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n')
     print(json.dumps({'records':len(rows),'results':sum(x['completed'] for x in rows),'conflicts':conflicts},indent=2))
 if __name__=='__main__':main()
+

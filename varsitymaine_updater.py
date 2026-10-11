@@ -16,28 +16,26 @@ import time
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
+from sports_data import canonical_team, covered_teams
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
 
 BASE = "https://www.varsitymaine.com/school/{team}/{sport}"
-OUT = Path("varsitymaine_schedule.json")
+OUT = Path(__file__).resolve().parent / "varsitymaine_schedule.json"
 
 # The Western Maine Report coverage list: Oxford County schools + Poland.
 # Slugs are Varsity Maine URL slugs.
 TEAMS = {
     "Oxford Hills": "oxford-hills",
-    "Poland": "poland",
+    "Poland Regional": "poland",
     "Fryeburg Academy": "fryeburg-academy",
     "Mountain Valley": "mountain-valley",
     "Telstar": "telstar",
     "Dirigo": "dirigo",
-    "Spruce Mountain": "spruce-mountain",
-    "Mt. Abram": "mt-abram",
     "Buckfield": "buckfield",
     "Sacopee Valley": "sacopee-valley",
-    "Rangeley Lakes Regional": "rangeley-lakes-regional",
-    "Hebron Academy": "hebron-academy",
     "Gould Academy": "gould-academy",
 }
 
@@ -80,9 +78,9 @@ def split_score_game(game: str, focus_team: str):
     left, _, right, _ = m.groups()
     left = clean(left)
     right = clean(right)
-    if focus_team.lower() in left.lower():
+    if canonical_team(focus_team) == canonical_team(left):
         return left, right
-    if focus_team.lower() in right.lower():
+    if canonical_team(focus_team) == canonical_team(right):
         return left, right
     return None
 
@@ -154,6 +152,7 @@ def main():
                 if not parsed:
                     continue
                 away, home, completed = parsed
+                away, home = canonical_team(away), canonical_team(home)
                 clock = clean(row.get("Time", "")) or "TBA"
                 result = clean(row.get("W/L/T", ""))
 
@@ -166,11 +165,13 @@ def main():
                 if "Cross Country" in sport and " at " not in game and not re.search(r"\d+,.*\d+", game):
                     event_type = "meet"
 
-                records.append({
+                month, day, year = map(int, raw_date.split('.'))
+                entry = {
                     "sport": "Cross Country" if "Cross Country" in sport else sport,
                     "gender": "Boys" if sport.startswith("Boys") else ("Girls" if sport.startswith("Girls") or sport == "Field Hockey" or sport == "Volleyball" else "Boys"),
                     "date": pretty_date,
                     "dateRaw": raw_date,
+                    "dateISO": f"{year:04d}-{month:02d}-{day:02d}",
                     "away": away,
                     "home": home,
                     "time": clock,
@@ -181,14 +182,24 @@ def main():
                     "region": "Western ME",
                     "source": "Varsity Maine",
                     "sourceUrl": url,
-                })
+                    "checked": datetime.now(ZoneInfo('America/New_York')).date().isoformat(),
+                    "verification": "pending",
+                    "venueKnown": not completed and ' at ' in game,
+                }
+                score = re.match(r'^(.+?)\s+(\d+),\s+(.+?)\s+(\d+)(?:,.*)?$', game)
+                if completed and score:
+                    entry.update(awayScore=int(score.group(2)), homeScore=int(score.group(4)))
+                entry['coveredTeams'] = covered_teams(entry)
+                if entry['coveredTeams']:
+                    records.append(entry)
             time.sleep(0.15)
 
-    records.sort(key=lambda r: (r["dateRaw"], r["sport"], r["away"], r["home"]))
+    records.sort(key=lambda r: (r["dateISO"], r["sport"], r["away"], r["home"]))
 
     payload = {
         "generated": datetime.now().isoformat(timespec="seconds"),
         "source": "Varsity Maine",
+        "publicationStatus": "Unreviewed candidates — not for publication",
         "sourceUrl": "https://www.varsitymaine.com/daily-scores-and-schedules-combined",
         "recordCount": len(records),
         "warnings": warnings,
@@ -202,3 +213,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

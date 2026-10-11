@@ -1,96 +1,121 @@
 #!/usr/bin/env python3
-"""Build the dashboard from reviewed source rows; rankings remain unverified until MPA is read."""
+"""Reproduce the reviewed dashboard offline. No fetching or automatic score approval."""
 import json
+import re
 from pathlib import Path
-from refresh_data import SCHOOLS,source_url
-R=Path(__file__).resolve().parent
-b=json.loads((R/'reference-september.json').read_text());p=json.loads((R/'verified_schedule.json').read_text());today=p['checked'];rows=p['schedule']
-if today!='2026-10-10': raise SystemExit('This reviewed supplemental snapshot is dated October 10. Reverify supplements before building a newer edition.')
-def add(sport,day,a,h,score=None,time='TBA',url='',source='Gould Academy',note=''):
- import datetime as dt
- d=dt.date(2026,10,day);row=dict(sport=sport,gender='Girls' if sport=='Girls Soccer' else 'Boys',date=d.strftime('%b %-d, %Y'),dateRaw=f'10.{day}.2026',dateISO=d.isoformat(),away=a,home=h,time=time,completed=score is not None,venueKnown=score is None,eventType='game',coveredTeams=[t for t in p['coverage'] if t in (a,h) or (sport=='Football' and t in ('Oxford Hills','Buckfield') and 'Oxford Hills/Buckfield' in (a,h))],region='Western ME',source=source,sourceUrl=url,sourceUrls=[url],checked=today)
- if score:row.update(awayScore=score[0],homeScore=score[1])
- if note:row['reviewNote']=note
- k=lambda x:(x['sport'],x['dateISO'],frozenset((x['away'],x['home'])))
- for old in list(rows):
-  if k(old)==k(row):rows.remove(old)
- rows.append(row)
-vm='https://www.varsitymaine.com/daily-scores-and-schedules-combined'
-for a,h,s in [('Bonny Eagle','Oxford Hills/Buckfield',(45,6)),('Kennebunk','Fryeburg Academy',(35,34)),('Winthrop','Dirigo',(19,6)),('Telstar','Sacopee Valley',(70,24))]:add('Football',9,a,h,s,url=vm,source='Varsity Maine')
-# The official Gould page leaves some past scores blank; retain that uncertainty.
-gb='https://www.gouldacademy.org/athleticsfsel-3707/boys-varsity-soccer'
-add('Boys Soccer',7,'Gould Academy','Hyde School',(1,8),url='https://www.hyde.edu/athletics/our-teams/boys-varsity-soccer',source='Hyde School')
-add('Boys Soccer',10,'Gould Academy','Hebron Academy',time='2 pm',url=gb)
-add('Boys Soccer',14,'Gould Academy','Kents Hill',time='3 pm',url=gb)
-add('Boys Soccer',17,'Hebron Academy','Gould Academy',time='3 pm',url=gb)
-add('Girls Soccer',31,'Hyde School','Gould Academy',time='noon',url='https://www.hyde.edu/athletics/our-teams/girls-varsity-soccer',source='Hyde School')
-# Independent football schedule listings supplement missing local listings.
-import re, datetime as dt
-from refresh_data import plain
-slugs={'telstar':'Telstar','sacopee-valley':'Sacopee Valley','mountain-valley':'Mountain Valley','oxford-hills':'Oxford Hills/Buckfield','fryeburg-academy':'Fryeburg Academy','poland':'Poland Regional','dirigo':'Dirigo'}
-alias={'OOB':'Old Orchard Beach','Traip':'Traip Academy','Fryeburg':'Fryeburg Academy','Poland':'Poland Regional','MCI':'Maine Central Institute','Mt. Blue':'Mount Blue','MDI':'Mount Desert Island','Oxford Hills':'Oxford Hills/Buckfield','John Bapst':'John Bapst/Bangor Christian/Ce'}
-for slug,team in slugs.items():
- body=(R/'source_cache'/('football-'+slug+'.html')).read_text()
- for attrs,content in re.findall(r'<div class="(iq-grow [^"]*)">(.*?)</div>',body,re.S):
-  date_match=re.search(r'/game/(2026-\d{2}-\d{2})-',content)
-  matchup=re.search(r'<a class="iq-card__link"[^>]*>(.*?)</a>',content)
-  final=re.search(r'<span class="iq-grow-r">(.*?)</span>\s*<span class="iq-card__go"',content,re.S)
-  if not (date_match and matchup and final):continue
-  d=dt.date.fromisoformat(date_match[1]);text=plain(matchup[1]);opponent=re.sub(r'^(?:vs\. |at )','',text);opponent=alias.get(opponent,opponent)
-  a,h=(team,opponent) if text.startswith('at ') else (opponent,team)
-  score=re.fullmatch(r'[WL] (\d+)–(\d+)',plain(final[1]))
-  row=dict(sport='Football',gender='Boys',date=d.strftime('%b %-d, %Y'),dateISO=d.isoformat(),dateRaw=f'{d.month}.{d.day}.2026',away=a,home=h,time='TBA' if score else plain(final[1]),completed=bool(score),venueKnown=True,eventType='game',coveredTeams=[t for t in p['coverage'] if t in (a,h) or (t in ('Oxford Hills','Buckfield') and 'Oxford Hills/Buckfield' in (a,h))],region='Western ME',source='niftiIQ (independent)',sourceUrl=f'https://niftiiq.com/maine/football/{slug}/',checked=today)
-  row['sourceUrls']=[row['sourceUrl']]
-  if score:
-   own,opp=map(int,score.groups());row.update(awayScore=own if a==team else opp,homeScore=own if h==team else opp)
-  same=[x for x in rows if x['sport']=='Football' and x['dateISO']==row['dateISO'] and {x['away'],x['home']}=={a,h}]
-  if same:
-   old=same[0]
-   if score and not old['completed']:rows.remove(old);rows.append(row)
-   elif score and old['completed']:
-    old_scores={old['away']:old['awayScore'],old['home']:old['homeScore']}
-    if old_scores!={a:row['awayScore'],h:row['homeScore']}:
-     old.update(completed=False,reviewNote='Conflicting reported scores; result withheld.');old.pop('awayScore',None);old.pop('homeScore',None)
-  else:rows.append(row)
+from sports_data import COVERAGE, covered_teams, game_key, iso_date, source_url_valid, verified_final
 
-rows.sort(key=lambda x:(x['dateISO'],x['sport'],x['away'],x['home']))
-meta=dict(b['meta'],generated=today,checked=today,coverage='Mountain Valley · Dirigo · Telstar · Buckfield · Oxford Hills · Gould Academy · Fryeburg Academy · Sacopee Valley · Poland Regional',coverageNote='Schedules and reported scores checked October 10. Missing results remain pending; source listings may be incomplete. Cross country and volleyball need a fresh source check. MPA standings supplied October 10 have been entered. This is a reviewed snapshot, not a live feed.')
-teams=[dict(name=n,highlight=True) for n in p['coverage']]
-summary=[]
-for team in p['coverage']:
- for sport in ['Football','Boys Soccer','Girls Soccer','Field Hockey']:
-  relevant=[x for x in rows if x['sport']==sport and (team in (x['away'],x['home']) or (team in ('Oxford Hills','Buckfield') and sport=='Football' and 'Oxford Hills/Buckfield' in (x['away'],x['home'])))]
-  if not relevant:continue
-  completed=[x for x in relevant if x['completed']];pending=[x for x in relevant if not x['completed'] and x['dateISO']<=today];latest=completed[-1] if completed else None
-  summary.append(dict(team=team,sport=sport,rank='—',record='Not verified',status='Official ranking pending',latest=(f"{latest['date']}: {latest['away']} {latest['awayScore']}–{latest['homeScore']} {latest['home']}" if latest else 'No verified result'),sourceUrl='https://www.mpa.cc/TournamentCentralRankings.aspx',pending=len(pending)))
-# Classifications verified from the MPA 2026-27 soccer bulletin, page 17.
-soccer_classes={'Oxford Hills':('A','North'),'Fryeburg Academy':('B','South'),'Poland Regional':('B','South'),'Sacopee Valley':('C','South'),'Dirigo':('8 Person','South')}
-for item in summary:
- item.update(classification='Pending verification',region='Pending verification',checked=today)
- if item['sport'] in ('Boys Soccer','Girls Soccer'):
-  cls=soccer_classes.get(item['team'])
-  if item['team']=='Mountain Valley':cls=('C' if item['sport']=='Boys Soccer' else '8 Person','South')
-  if item['team']=='Telstar':cls=('8 Person' if item['sport']=='Boys Soccer' else 'D','South')
-  if item['team']=='Buckfield':cls=('D' if item['sport']=='Boys Soccer' else '8 Person','South')
-  if cls:item.update(classification=cls[0],region=cls[1])
- if item['team']=='Gould Academy':item.update(classification='Prep school',region='MAISAD / NEPSAC',status='Separate prep-school standings',rank='N/A',record='Not verified')
-verified=json.loads((R/'standings_verified.json').read_text())
-seen=set()
-for entry in verified:
- key=(entry['team'],entry['sport'])
- assert key not in seen,'Duplicate standings entry';seen.add(key)
- assert isinstance(entry['rank'],int) and entry['rank']>0,'Rank must be a positive integer'
- import datetime,re
- datetime.date.fromisoformat(entry['checked'])
- assert entry['checked']<=today,'Standings date cannot be in the future'
- assert re.fullmatch(r'\d+-\d+(?:-\d+)?',entry['record']),'Record must be W-L or W-L-T'
- assert entry['sourceUrl'].startswith('https://www.mpa.cc/'),'Official MPA source required'
- assert entry['classification'] and entry['region'],'Class and region required'
- matches=[x for x in summary if (x['team'],x['sport'])==key]
- if not matches and key==('Massabesic/Sacopee Coop','Girls Volleyball'):
-  summary.append(dict(team=key[0],sport=key[1],latest='No verified result',pending=0));matches=[summary[-1]]
- assert len(matches)==1 and entry['team']!='Gould Academy','Unknown MPA team/sport'
- matches[0].update(entry,status='Verified MPA snapshot')
-data=dict(meta=meta,schedule=rows,teams=teams,athletes=[],realignments=b['realignments'],standings=dict(lastUpdated=today+' — '+str(len(verified))+' verified school/sport entries',rows=summary,football=[],note='Verified standings are from MPA tables supplied October 10; the page update timestamp was not included. All listed MPA standings have been entered; Gould has separate prep-school standings. Qualifying/non-qualifying labels during the season are provisional, not final playoff decisions. Football has separate seeding rules. Missing scores are not losses.'),updateLog=[dict(week='October refresh',date=today,summary=f"Refreshed {len(rows)} source-linked games and reported results for WMR coverage schools. Duplicate scheduled/result rows reconciled. Missing results and source conflicts flagged. Official rankings remain pending.")],sources=[dict(name='Local school schedules and reported results',url='https://www.downtownme.com/sports/sports.asp',use='September–October listings checked October 10; dates/times may need school confirmation.'),dict(name='niftiIQ football schedules',url='https://niftiiq.com/maine/football/',use='Independent football schedule/result listings, checked October 10. Not official MPA rankings.'),dict(name='Varsity Maine daily scores',url=vm,use='October 9 football results.'),dict(name='Gould Academy athletics',url='https://www.gouldacademy.org/athletics',use='Prep-school schedules; Gould does not share the public-school MPA ranking structure.'),dict(name='Hyde School boys soccer',url='https://www.hyde.edu/athletics/our-teams/boys-varsity-soccer',use='October 7 Gould result.'),dict(name='MPA official standings',url='https://www.mpa.cc/TournamentCentralRankings.aspx',use='Official ranks and tournament seeds; automated retrieval was blocked.'),dict(name='MPA 2026 soccer bulletin',url='https://www.mpa.cc/resources/Tournament%20Info/Soccer%20Boys/Bulletin%202026-27.pdf',use='Current soccer playoff rules and dates.')])
-(R/'js/data.js').write_text('/* Reviewed sports snapshot; see linked sources and verification notes. */\nwindow.WM_DATA = '+json.dumps(data,indent=2,ensure_ascii=False)+';\n')
-print(len(rows),'rows;',sum(x['completed'] for x in rows),'reported scores;',len(summary),'team/sport entries')
+ROOT = Path(__file__).resolve().parent
+MPA = 'https://www.mpa.cc/TournamentCentralRankings.aspx'
+SPORTS = ('Football', 'Boys Soccer', 'Girls Soccer', 'Field Hockey', 'Volleyball', 'Girls Volleyball', 'Golf', 'Cross Country')
+
+def require(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+def build_data(root=ROOT):
+    reference = json.loads((root / 'reference-september.json').read_text())
+    reviewed = json.loads((root / 'verified_schedule.json').read_text())
+    standings = json.loads((root / 'standings_verified.json').read_text())
+    checked = reviewed['checked']
+    review_date = reviewed['reviewedOn']
+    require(iso_date(checked) <= iso_date(review_date), 'Review cannot precede source capture')
+    require(set(reviewed['coverage']) == set(COVERAGE), 'Exactly the nine WMR coverage schools are required')
+    rows = reviewed['schedule']
+    seen = set()
+    for row in rows:
+        key = game_key(row)
+        require(key not in seen, f'Duplicate game: {key}')
+        seen.add(key)
+        played = iso_date(row['dateISO'])
+        require(2026 == played.year and 9 <= played.month <= 11, f'Wrong fall season: {key}')
+        require(row['sport'] in SPORTS, f'Unsupported sport: {key}')
+        require(row['dateRaw'] == f'{played.month}.{played.day}.{played.year}', f'Conflicting date fields: {key}')
+        require(covered_teams(row), f'Game outside WMR coverage: {key}')
+        require(source_url_valid(row.get('sourceUrl')), f'Source link required: {key}')
+        require(row.get('verification') in ('verified', 'pending', 'disputed'), f'Explicit verification required: {key}')
+        require(iso_date(row['checked']) <= iso_date(review_date), f'Future source check: {key}')
+        if row['verification'] == 'verified':
+            require(verified_final(row, review_date), f'Final needs valid scores, dates and an explicit source review: {key}')
+        if row.get('completed'):
+            require(played <= iso_date(checked), f'Final after source snapshot: {key}')
+            require(all(type(row.get(k)) is int and row[k] >= 0 for k in ('awayScore', 'homeScore')), f'Invalid score: {key}')
+        row['coveredTeams'] = covered_teams(row)
+    rows.sort(key=lambda g: (g['dateISO'], g['sport'], g['away'], g['home']))
+
+    summary = []
+    for team in COVERAGE:
+        for sport in SPORTS:
+            relevant = [g for g in rows if g['sport'] == sport and team in g['coveredTeams']]
+            if not relevant:
+                continue
+            finals = [g for g in relevant if verified_final(g, review_date)]
+            latest = finals[-1] if finals else None
+            summary.append(dict(
+                team=team, sport=sport, rank='—', record='Not verified',
+                status='Official ranking pending', classification='Pending verification',
+                region='Pending verification', checked=checked, sourceUrl=MPA,
+                pending=sum(not verified_final(g, review_date) and g['dateISO'] <= checked for g in relevant),
+                latest=(f"{latest['date']}: {latest['away']} {latest['awayScore']}–{latest['homeScore']} {latest['home']}" if latest else 'No confirmed final in this snapshot'),
+            ))
+    for item in summary:
+        if item['team'] == 'Gould Academy':
+            item.update(classification='Prep school', region='MAISAD / NEPSAC', status='Separate prep-school standings', rank='N/A', record='Not verified', sourceUrl='https://www.gouldacademy.org/athletics')
+
+    seen = set()
+    for entry in standings:
+        key = (entry['team'], entry['sport'])
+        require(key not in seen, f'Duplicate standings: {key}')
+        seen.add(key)
+        require(entry['team'] in COVERAGE or key == ('Massabesic/Sacopee Coop', 'Girls Volleyball'), f'Unknown MPA team: {key}')
+        require(entry['team'] != 'Gould Academy', 'Gould prep-school rankings cannot be labeled MPA')
+        require(type(entry['rank']) is int and entry['rank'] > 0, f'Invalid rank: {key}')
+        require(iso_date(entry['checked']) <= iso_date(checked), f'Standings after source snapshot: {key}')
+        require(re.fullmatch(r'\d+-\d+(?:-\d+)?', entry['record']), f'Invalid W-L or W-L-T record: {key}')
+        require(source_url_valid(entry['sourceUrl'], official=True), f'Official MPA source required: {key}')
+        require(entry['classification'] and entry['region'], f'Class and region required: {key}')
+        if entry.get('playoff'):
+            playoff = entry['playoff']
+            require(playoff.get('confirmed') is True and isinstance(playoff.get('status'), str) and playoff['status'], f'Playoff status must be explicitly confirmed: {key}')
+            require(source_url_valid(playoff.get('sourceUrl'), official=True), f'Official playoff source required: {key}')
+            require(iso_date(playoff['checked']) <= iso_date(review_date), f'Future playoff confirmation: {key}')
+            if playoff.get('seed') is not None:
+                require(type(playoff['seed']) is int and playoff['seed'] > 0, f'Invalid confirmed seed: {key}')
+        matches = [s for s in summary if (s['team'], s['sport']) == key]
+        if not matches:
+            summary.append(dict(team=entry['team'], sport=entry['sport'], latest='No confirmed final in this snapshot', pending=0))
+            matches = [summary[-1]]
+        require(len(matches) == 1, f'Ambiguous standings: {key}')
+        matches[0].update(entry, status='Verified MPA snapshot')
+    unique = {(s.get('standingTeam', s['team']), s['sport'], s['classification'], s['region']) for s in summary if s['status'] == 'Verified MPA snapshot'}
+    standings_date = max((s['checked'] for s in summary if s['status'] == 'Verified MPA snapshot'), default=checked)
+    counts = sum(verified_final(g, review_date) for g in rows)
+    meta = dict(reference['meta'], generated=checked, checked=checked, reviewedOn=review_date,
+        coverage=' · '.join('Oxford Hills Comprehensive' if t == 'Oxford Hills' else t for t in COVERAGE),
+        coverageNote=f'Schedules and results are from the {checked} source snapshot; integrity reviewed {review_date}. Finals retain their dated source review. Missing or disputed results are withheld from weekly reports. Cross country and volleyball game listings need a fresh source check. Each MPA rank retains its capture date and is not live.')
+    return dict(meta=meta, schedule=rows,
+        teams=[dict(name=t, displayName='Oxford Hills Comprehensive' if t == 'Oxford Hills' else t, highlight=True) for t in COVERAGE],
+        athletes=[], realignments=reference['realignments'],
+        standings=dict(lastUpdated=standings_date, rows=summary, football=[],
+            note='Each MPA ranking and season record shows its original capture date; the page update timestamp was not supplied. The cooperative Oxford Hills/Buckfield football entry appears once in the table. Its supplied MPA record differs from score listings and is preserved for reconciliation. Gould follows separate prep-school standings. In-season ranks are not confirmed playoff berths or seeds. Missing scores are not losses.'),
+        updateLog=[dict(week='Verification review', date=review_date, summary='Withheld Gould–Hyde boys soccer because official school pages disagree; original score retained. Expanded Mountain Valley’s truncated football opponent name using the official MPA page, retaining the original label. No scores or MPA standings were substituted.'),
+            dict(week='October snapshot', date=checked, summary=f'{len(rows)} source-linked entries; {counts} confirmed finals after the conflict review. {len(unique)} distinct MPA tournament entries captured October 10. Missing results and possible rescheduled duplicates remain flagged.')],
+        sources=[
+            dict(name='MPA official standings', url=MPA, use='Official tournament ranks and season records captured October 10; current pages can differ from this historical snapshot.'),
+            dict(name='School athletics pages', url='https://www.gouldacademy.org/athletics', use='Primary schedules and finals; Gould follows prep-school competition. Conflicting scores require confirmation.'),
+            dict(name='Hyde School boys soccer', url='https://www.hyde.edu/athletics/our-teams/boys-varsity-soccer', use='October 7 Gould result conflicts with Gould’s page; withheld pending confirmation.'),
+            dict(name='Gould boys soccer', url='https://www.gouldacademy.org/athleticsfsel-3707/boys-varsity-soccer', use='October 7 score discrepancy reviewed October 11; school schedules include separate prep competitions.'),
+            dict(name='Varsity Maine daily scores', url='https://www.varsitymaine.com/daily-scores-and-schedules-combined', use='Reviewed October 9 football scores in the October 10 snapshot.'),
+            dict(name='Local schedules and reported results', url='https://www.downtownme.com/sports/sports.asp', use='Secondary listings reviewed October 10. Confirm missing results, schedule changes and disputes with schools or MPA.'),
+            dict(name='niftiIQ football schedules', url='https://niftiiq.com/maine/football/', use='Independent football listings from the reviewed October 10 snapshot; not official MPA rankings.'),
+            dict(name='MPA 2026 soccer bulletin', url='https://www.mpa.cc/resources/Tournament%20Info/Soccer%20Boys/Bulletin%202026-27.pdf', use='Official 2026 rules, classifications and tournament dates; latest checked October 11.'),
+        ])
+
+def main():
+    data = build_data()
+    (ROOT / 'js/data.js').write_text('/* Reviewed sports snapshot; see linked sources and verification notes. */\nwindow.WM_DATA = ' + json.dumps(data, indent=2, ensure_ascii=False) + ';\n')
+    print(len(data['schedule']), 'entries;', sum(verified_final(g, data['meta']['reviewedOn']) for g in data['schedule']), 'confirmed finals; MPA capture', data['standings']['lastUpdated'])
+
+if __name__ == '__main__':
+    main()
+
