@@ -308,7 +308,7 @@
     const top=innerScroll?main.getBoundingClientRect().top+100:Math.max(0,$('.topbar').getBoundingClientRect().bottom,$('.sidebar').getBoundingClientRect().bottom)+24;
     const scroll=innerScroll?main:document.scrollingElement;
     const atEnd=scroll.scrollTop+scroll.clientHeight>=scroll.scrollHeight-2;
-    const current=atEnd?sections[sections.length-1]:[...sections].reverse().find(s=>s.getBoundingClientRect().top<=top)||sections[0];
+    const current=atEnd?sections[sections.length-1]:sections.filter(s=>s.getBoundingClientRect().top<=top).sort((a,b)=>b.getBoundingClientRect().top-a.getBoundingClientRect().top)[0]||sections[0];
     navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current.id));
   }
   main.addEventListener('scroll',syncNav,{passive:true});
